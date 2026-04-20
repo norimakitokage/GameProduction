@@ -1,0 +1,26 @@
+#pragma once
+#include <DxLib.h>
+
+#define DEBUG
+
+//画面の大きさ関係
+const int WINDOW_SIZE_X = 1600;
+const int WINDOW_SIZE_Y = 900;
+//画面の中心座標
+const int WINDOW_SENTER_X = static_cast<int>(WINDOW_SIZE_X * 0.5);
+const int WINDOW_SENTER_Y = static_cast<int>(WINDOW_SIZE_Y * 0.5);
+
+// ブロックを配置するサイズ
+
+
+//色
+const int WHITE = GetColor(255, 255, 255);	//白
+const int BLACK = GetColor(0, 0, 0);			//黒
+const int RED = GetColor(255, 0, 0);			//赤
+const int BLUE = GetColor(0, 0, 255);		//青
+const int GREEN = GetColor(0, 255, 0);		//緑
+
+//初期化
+const VECTOR ZERO = VGet(0.0f, 0.0f, 0.0f);
+
+
