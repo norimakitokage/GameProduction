@@ -5,12 +5,17 @@ void CBlock::Init(int X, int Y)
 {
 	m_Center = VGet((float)X, (float)Y, 0.0f);
 	m_Flag = false;
+
+	m_AnimFlag = false;
+	m_Count = 0;
+
+	m_IsTouch = false;
 }
 
 void CBlock::Step()
 {
 	if (m_AnimFlag) {
-
+		m_Count++;
 	}
 }
 
@@ -29,7 +34,12 @@ bool CBlock::GetFlag()
 	return m_Flag;
 }
 
-void CBlock::SetFlagOn()
+void CBlock::FlagOn()
 {
 	m_Flag = true;
+}
+
+void CBlock::FlagOFF()
+{
+	m_Flag = false;
 }

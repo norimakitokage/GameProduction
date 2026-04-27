@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\BlockManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\RandomBlock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\BlockManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\RandomBlock.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Block\\Block.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Block\\Block.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,8 +27,24 @@
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Block\\Block.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Scene\\sceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Observer\\Observer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Scene\\sceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,40 +59,12 @@
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Observer\\Subject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\BlockManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Lib\\Admin\\Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Lib\\Admin\\Data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Scene\\sceneGame\\SceneGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Game\\Scene\\sceneGame\\SceneGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Lib\\Admin\\Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:src\\Lib\\Admin\\Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|solutionrelative:Src\\Game\\Block\\BlockManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7039661D-574B-45DB-B51B-A170F06563C2}|BlockPuzzle.vcxproj|C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -86,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Main.cpp",
               "RelativeDocumentMoniker": "src\\Main.cpp",
@@ -99,12 +103,11 @@
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T00:53:23.534Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Common.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Common.h",
               "RelativeDocumentMoniker": "Src\\Common.h",
@@ -113,129 +116,141 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-09T00:53:24.302Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RandomBlock.h",
+              "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.h",
+              "RelativeDocumentMoniker": "Src\\Game\\Block\\RandomBlock.h",
+              "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.h",
+              "RelativeToolTip": "Src\\Game\\Block\\RandomBlock.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-23T00:59:32.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "RandomBlock.cpp",
+              "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.cpp",
+              "RelativeDocumentMoniker": "Src\\Game\\Block\\RandomBlock.cpp",
+              "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\RandomBlock.cpp",
+              "RelativeToolTip": "Src\\Game\\Block\\RandomBlock.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwCsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-23T00:59:13.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Subject.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Subject.h",
               "RelativeDocumentMoniker": "Src\\Game\\Observer\\Subject.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Subject.h",
               "RelativeToolTip": "Src\\Game\\Observer\\Subject.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-20T03:29:25.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Subject.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Subject.cpp",
               "RelativeDocumentMoniker": "Src\\Game\\Observer\\Subject.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Subject.cpp",
               "RelativeToolTip": "Src\\Game\\Observer\\Subject.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-20T03:29:09.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Observer.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.h",
               "RelativeDocumentMoniker": "Src\\Game\\Observer\\Observer.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.h",
               "RelativeToolTip": "Src\\Game\\Observer\\Observer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-20T03:28:53.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Observer.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.cpp",
               "RelativeDocumentMoniker": "Src\\Game\\Observer\\Observer.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Observer\\Observer.cpp",
               "RelativeToolTip": "Src\\Game\\Observer\\Observer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-20T03:28:40.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Debug.cpp",
-              "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Lib\\Admin\\Debug.cpp",
-              "RelativeDocumentMoniker": "Src\\Lib\\Admin\\Debug.cpp",
-              "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Lib\\Admin\\Debug.cpp",
-              "RelativeToolTip": "Src\\Lib\\Admin\\Debug.cpp",
-              "ViewState": "AgIAAB0AAAAAAAAAAAASwB8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-20T03:10:39.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "BlockManager.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.h",
               "RelativeDocumentMoniker": "Src\\Game\\Block\\BlockManager.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.h",
               "RelativeToolTip": "Src\\Game\\Block\\BlockManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-09T02:09:03.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "BlockManager.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.cpp",
               "RelativeDocumentMoniker": "Src\\Game\\Block\\BlockManager.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.cpp",
               "RelativeToolTip": "Src\\Game\\Block\\BlockManager.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T02:08:47.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Block.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Block\\Block.h",
               "RelativeDocumentMoniker": "src\\Game\\Block\\Block.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Block\\Block.h",
               "RelativeToolTip": "src\\Game\\Block\\Block.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-09T01:44:07.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Block.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\Block.cpp",
               "RelativeDocumentMoniker": "Src\\Game\\Block\\Block.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\Block.cpp",
               "RelativeToolTip": "Src\\Game\\Block\\Block.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T01:43:55.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Data.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Lib\\Admin\\Data.h",
               "RelativeDocumentMoniker": "Src\\Lib\\Admin\\Data.h",
@@ -243,12 +258,11 @@
               "RelativeToolTip": "Src\\Lib\\Admin\\Data.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-09T02:02:33.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T02:02:33.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Data.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Lib\\Admin\\Data.cpp",
               "RelativeDocumentMoniker": "Src\\Lib\\Admin\\Data.cpp",
@@ -260,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Background.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Background\\Background.h",
               "RelativeDocumentMoniker": "Src\\Game\\Background\\Background.h",
@@ -272,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Background.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Background\\Background.cpp",
               "RelativeDocumentMoniker": "Src\\Game\\Background\\Background.cpp",
@@ -284,26 +298,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.h",
               "RelativeDocumentMoniker": "src\\Game\\Player\\Player.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.h",
               "RelativeToolTip": "src\\Game\\Player\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-09T01:28:24.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.cpp",
-              "RelativeDocumentMoniker": "src\\Game\\Player\\Player.cpp",
-              "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Player\\Player.cpp",
-              "RelativeToolTip": "src\\Game\\Player\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Player\\Player.cpp",
+              "RelativeDocumentMoniker": "Src\\Game\\Player\\Player.cpp",
+              "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Player\\Player.cpp",
+              "RelativeToolTip": "Src\\Game\\Player\\Player.cpp",
+              "ViewState": "AgIAAA0AAAAAAAAAAAASwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T01:28:11.691Z",
               "EditorCaption": ""
@@ -316,20 +330,20 @@
               "RelativeDocumentMoniker": "src\\Game\\Scene\\sceneGame\\SceneGame.h",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.h",
               "RelativeToolTip": "src\\Game\\Scene\\sceneGame\\SceneGame.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-09T01:14:19.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "SceneGame.cpp",
               "DocumentMoniker": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.cpp",
               "RelativeDocumentMoniker": "src\\Game\\Scene\\sceneGame\\SceneGame.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\src\\Game\\Scene\\sceneGame\\SceneGame.cpp",
               "RelativeToolTip": "src\\Game\\Scene\\sceneGame\\SceneGame.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAnwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T01:14:18.325Z",
               "EditorCaption": ""

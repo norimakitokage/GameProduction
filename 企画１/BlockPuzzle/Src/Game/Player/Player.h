@@ -24,4 +24,9 @@ public:
 	void Exit();
 	void Draw();
 
+public:
+	int GetX();
+	int GetY();
+
+
 };

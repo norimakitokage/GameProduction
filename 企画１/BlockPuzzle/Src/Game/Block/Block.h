@@ -20,6 +20,9 @@ protected:
 	// アニメーションのフラグ
 	bool m_AnimFlag;
 
+	// プレイヤーがカーソルを合わせた
+	bool m_IsTouch;
+
 public:
 
 	void Init(int X, int Y);
@@ -36,7 +39,7 @@ public:
 	bool GetFlag();
 
 	// 生存フラグのセット
-	void SetFlagOn();
-
+	void FlagOn();
+	void FlagOFF();
 };
 

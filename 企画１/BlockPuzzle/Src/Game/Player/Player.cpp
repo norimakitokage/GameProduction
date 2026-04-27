@@ -33,3 +33,14 @@ void CPlayer::Draw()
 {
 
 }
+
+
+int CPlayer::GetX()
+{
+	return m_X;
+}
+
+int CPlayer::GetY()
+{
+	return m_Y;
+}

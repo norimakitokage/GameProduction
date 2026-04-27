@@ -67,6 +67,12 @@
     <Filter Include="ソース ファイル\Game\Observer">
       <UniqueIdentifier>{2c40df61-2f85-4fae-a030-9a72222f3083}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game\HitCheck">
+      <UniqueIdentifier>{a4bff42f-d7fc-44e2-a7b1-61f8481d23a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Check">
+      <UniqueIdentifier>{79d2107d-d525-4a5d-9ae8-d6fc83174c34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Common.h">
@@ -129,6 +135,9 @@
     <ClInclude Include="Src\Game\Observer\Subject.h">
       <Filter>ソース ファイル\Game\Observer</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Game\Block\RandomBlock.h">
+      <Filter>ソース ファイル\Game\Block</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -190,6 +199,9 @@
     </ClCompile>
     <ClCompile Include="Src\Game\Observer\Subject.cpp">
       <Filter>ソース ファイル\Game\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Block\RandomBlock.cpp">
+      <Filter>ソース ファイル\Game\Block</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

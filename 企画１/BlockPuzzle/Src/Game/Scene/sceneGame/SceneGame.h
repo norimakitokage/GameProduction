@@ -39,8 +39,10 @@ private:
 	void Load();
 	//スタート待機
 	void StartWait();
-	//更新
+	
+	// 更新
 	void Step();
+
 	//上書き
 	void Update();
 	//終了待機

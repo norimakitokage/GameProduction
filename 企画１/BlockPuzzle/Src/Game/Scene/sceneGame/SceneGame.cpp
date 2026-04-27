@@ -62,7 +62,7 @@ void CSceneGame::StartWait() {
 //XVˆ—
 void CSceneGame::Step() {
 
-	m_Block.Step();
+	m_Block.Step(1,1);
 
 	Update();
 
