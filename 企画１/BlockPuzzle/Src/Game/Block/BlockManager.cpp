@@ -1,4 +1,5 @@
 #include "BlockManager.h"
+#include "../../Common.h"
 
 const char* BLOCK_ANIM_PATH[BLOCK_ANIM_NUM] = {
 	"",
@@ -16,8 +17,25 @@ const char* RANDOM_BLOCK_PATH[tagRandBlockType::NUMBER] = {
 	"Data/Graph/5_hori.png",
 	"Data/Graph/5_ver.png",
 	"Data/Graph/3_up_left.png",
-
+	"Data/Graph/3_up_right.png",
+	"Data/Graph/3_down_right.png",
+	"Data/Graph/3_down_left.png",
+	"Data/Graph/5_up_left.png",
+	"Data/Graph/5_up_right.png",
+	"Data/Graph/5_down_right.png",
+	"Data/Graph/5_down_left.png",
+	"Data/Graph/9.png",
 };
+
+// ç≈èâÇÃà íu
+const int RANDOM_BLOCK_X = (WINDOW_SIZE_X / 4) * 3;
+const int RANDOM_BLOCK_Y[CHOISE_NUM] = {
+	WINDOW_SIZE_Y / 4,
+	RANDOM_BLOCK_Y[0] * 2,
+	RANDOM_BLOCK_Y[0] * 3,
+};
+// ògÇÃîºåa
+const int RANDOM_BLOCK_RADIUS = RANDOM_BLOCK_Y[0] / 2;
 
 
 
@@ -64,6 +82,10 @@ void CBlockManager::Load()
 
 	if (m_BlockBgHndl == -1) {
 		m_BlockBgHndl = LoadGraph("Data/Graph/BLOCK_NONE.png");
+	}
+
+	for (int i = 0; i < tagRandBlockType::NUMBER; i++) {
+		m_RBlockHndl[i] = LoadGraph(RANDOM_BLOCK_PATH[i]);
 	}
 }
 
@@ -117,6 +139,11 @@ void CBlockManager::Draw()
 				DrawModiGraph(left, up, right, up, right, down, left, down, m_BlockHndl, TRUE);
 			}
 		}
+	}
+
+	for (int i = 0; i < CHOISE_NUM; i++) {
+		DrawBox(RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
+			RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS, WHITE, FALSE);
 	}
 }
 

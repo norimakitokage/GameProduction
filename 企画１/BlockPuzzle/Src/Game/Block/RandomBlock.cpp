@@ -1,13 +1,12 @@
 #include "RandomBlock.h"
 #include "BlockManager.h"
+#include "../../Lib/Math/Getrand.h"
 
 void CRandBlock::Init()
 {
 	m_State = WAIT;
-}
 
-void CRandBlock::Load()
-{
+	m_Type = Random();
 }
 
 void CRandBlock::Step(int x, int y)
@@ -20,11 +19,19 @@ void CRandBlock::Step(int x, int y)
 		m_X = x;
 		m_Y = y;
 		break;
+	case NONE:
+		
+		m_IsPut = false;
+		m_Type = Random();
+		m_State = WAIT;
+		
+		break;
 	}
 }
 
 void CRandBlock::Exit()
 {
+	m_State = WAIT;
 }
 
 void CRandBlock::Draw(int hndl)
@@ -258,4 +265,23 @@ void CRandBlock::Draw(int hndl)
 void CRandBlock::SetState(tagRandState state)
 {
 	m_State = state;
+}
+
+bool CRandBlock::GetIsPut()
+{
+	return m_IsPut;
+}
+
+void CRandBlock::IsPutOn()
+{
+	m_IsPut = true;
+}
+
+tagRandBlockType CRandBlock::Random()
+{
+	// ブロックを抽選
+	int i = -1;
+	i = CRand::Rand(0, (int)tagRandBlockType::NUMBER);
+
+	return (tagRandBlockType)i;
 }

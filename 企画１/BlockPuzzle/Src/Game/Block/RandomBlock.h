@@ -46,7 +46,8 @@ enum tagRandBlockType {
 
 enum tagRandState {
 	WAIT,
-	CARRY
+	CARRY,
+	NONE,
 
 };
 
@@ -58,12 +59,16 @@ private:
 	// ブロックの状態
 	tagRandState m_State;
 
+	// 設置されたか
+	bool m_IsPut;
+
+	// 座標
 	int m_X;
 	int m_Y;
 
 public:
 	void Init();
-	void Load();
+	//void Load();
 	void Step(int x, int y);
 	void Exit();
 	void Draw(int hndl);
@@ -71,5 +76,12 @@ public:
 public:
 	// 状態遷移をセット
 	void SetState(tagRandState state);
+	// 設置されたか確認
+	bool GetIsPut();
+	// 設置された時
+	void IsPutOn();
+
+private:
+	tagRandBlockType Random();
 };
 

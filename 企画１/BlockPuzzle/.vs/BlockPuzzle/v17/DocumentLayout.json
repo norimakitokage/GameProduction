@@ -128,8 +128,7 @@
               "RelativeToolTip": "Src\\Game\\Block\\RandomBlock.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-23T00:59:32.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T00:59:32.25Z"
             },
             {
               "$type": "Document",
@@ -141,8 +140,7 @@
               "RelativeToolTip": "Src\\Game\\Block\\RandomBlock.cpp",
               "ViewState": "AgIAABsAAAAAAAAAAAAiwCsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-23T00:59:13.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T00:59:13.952Z"
             },
             {
               "$type": "Document",
@@ -154,8 +152,7 @@
               "RelativeToolTip": "Src\\Game\\Observer\\Subject.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-20T03:29:25.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T03:29:25.639Z"
             },
             {
               "$type": "Document",
@@ -167,8 +164,7 @@
               "RelativeToolTip": "Src\\Game\\Observer\\Subject.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-20T03:29:09.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T03:29:09.321Z"
             },
             {
               "$type": "Document",
@@ -180,8 +176,7 @@
               "RelativeToolTip": "Src\\Game\\Observer\\Observer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-20T03:28:53.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T03:28:53.407Z"
             },
             {
               "$type": "Document",
@@ -193,8 +188,7 @@
               "RelativeToolTip": "Src\\Game\\Observer\\Observer.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-20T03:28:40.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T03:28:40.768Z"
             },
             {
               "$type": "Document",
@@ -206,8 +200,7 @@
               "RelativeToolTip": "Src\\Game\\Block\\BlockManager.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-09T02:09:03.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T02:09:03.304Z"
             },
             {
               "$type": "Document",
@@ -217,7 +210,7 @@
               "RelativeDocumentMoniker": "Src\\Game\\Block\\BlockManager.cpp",
               "ToolTip": "C:\\Users\\2409409\\Desktop\\GameProduction\\\u4F01\u753B\uFF11\\BlockPuzzle\\Src\\Game\\Block\\BlockManager.cpp",
               "RelativeToolTip": "Src\\Game\\Block\\BlockManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-09T02:08:47.344Z",
               "EditorCaption": ""
@@ -232,8 +225,7 @@
               "RelativeToolTip": "src\\Game\\Block\\Block.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-09T01:44:07.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:44:07.47Z"
             },
             {
               "$type": "Document",
@@ -245,8 +237,7 @@
               "RelativeToolTip": "Src\\Game\\Block\\Block.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-09T01:43:55.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:43:55.808Z"
             },
             {
               "$type": "Document",
@@ -306,8 +297,7 @@
               "RelativeToolTip": "src\\Game\\Player\\Player.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-09T01:28:24.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:28:24.212Z"
             },
             {
               "$type": "Document",
@@ -319,8 +309,7 @@
               "RelativeToolTip": "Src\\Game\\Player\\Player.cpp",
               "ViewState": "AgIAAA0AAAAAAAAAAAASwCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-09T01:28:11.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:28:11.691Z"
             },
             {
               "$type": "Document",
@@ -332,8 +321,7 @@
               "RelativeToolTip": "src\\Game\\Scene\\sceneGame\\SceneGame.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-09T01:14:19.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:14:19.622Z"
             },
             {
               "$type": "Document",
@@ -345,8 +333,7 @@
               "RelativeToolTip": "src\\Game\\Scene\\sceneGame\\SceneGame.cpp",
               "ViewState": "AgIAACgAAAAAAAAAAAAnwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-09T01:14:18.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T01:14:18.325Z"
             }
           ]
         }
