@@ -144,6 +144,7 @@
     <ClInclude Include="src\Game\Block\Block.h" />
     <ClInclude Include="Src\Game\Block\BlockManager.h" />
     <ClInclude Include="Src\Game\Block\RandomBlock.h" />
+    <ClInclude Include="Src\Game\HitCheck\HitCheck.h" />
     <ClInclude Include="Src\Game\Observer\Observer.h" />
     <ClInclude Include="Src\Game\Observer\Subject.h" />
     <ClInclude Include="src\Game\Player\Player.h" />
@@ -166,6 +167,7 @@
     <ClCompile Include="src\Game\Block\Block.cpp" />
     <ClCompile Include="Src\Game\Block\BlockManager.cpp" />
     <ClCompile Include="Src\Game\Block\RandomBlock.cpp" />
+    <ClCompile Include="Src\Game\HitCheck\HitCheck.cpp" />
     <ClCompile Include="Src\Game\Observer\Observer.cpp" />
     <ClCompile Include="Src\Game\Observer\Subject.cpp" />
     <ClCompile Include="src\Game\Player\Player.cpp" />

@@ -4,7 +4,7 @@
 
 constexpr int BLOCK_WIDE = 20;
 
-class CBlock : public CObserver
+class CBlock //: public CObserver
 {
 protected:
 	// 中心座標
@@ -29,7 +29,7 @@ public:
 
 	void Step();
 
-	void Update();
+	void Calc();
 
 public:
 	// 中心座標取得

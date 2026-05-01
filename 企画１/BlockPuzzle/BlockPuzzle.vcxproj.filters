@@ -138,6 +138,9 @@
     <ClInclude Include="Src\Game\Block\RandomBlock.h">
       <Filter>ソース ファイル\Game\Block</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Game\HitCheck\HitCheck.h">
+      <Filter>ソース ファイル\Game\HitCheck</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -202,6 +205,9 @@
     </ClCompile>
     <ClCompile Include="Src\Game\Block\RandomBlock.cpp">
       <Filter>ソース ファイル\Game\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\HitCheck\HitCheck.cpp">
+      <Filter>ソース ファイル\Game\HitCheck</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

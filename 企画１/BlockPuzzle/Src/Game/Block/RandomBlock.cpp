@@ -19,13 +19,6 @@ void CRandBlock::Step(int x, int y)
 		m_X = x;
 		m_Y = y;
 		break;
-	case NONE:
-		
-		m_IsPut = false;
-		m_Type = Random();
-		m_State = WAIT;
-		
-		break;
 	}
 }
 
@@ -257,14 +250,23 @@ void CRandBlock::Draw(int hndl)
 			break;
 		}
 	}
-	else {
+}
 
-	}
+void CRandBlock::Calc()
+{
+	m_IsPut = false;
+	m_Type = Random();
+	m_State = WAIT;
 }
 
 void CRandBlock::SetState(tagRandState state)
 {
 	m_State = state;
+}
+
+tagRandState CRandBlock::GetState()
+{
+	return m_State;
 }
 
 bool CRandBlock::GetIsPut()

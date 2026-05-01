@@ -19,7 +19,7 @@ void CBlock::Step()
 	}
 }
 
-void CBlock::Update() {
+void CBlock::Calc() {
 	m_Flag = false;
 	m_AnimFlag = true;
 }

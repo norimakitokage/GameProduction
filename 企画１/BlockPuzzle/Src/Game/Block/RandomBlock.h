@@ -1,8 +1,11 @@
 #pragma once
 #include <DxLib.h>
 #include "../../Lib/Math/Getrand.h"
+#include "../Observer/Observer.h"
 
-enum tagRandBlockType {
+
+enum tagRandBlockType
+{
 	// 1ブロック
 	TYPE_1,
 	// 2ブロック(横)
@@ -47,11 +50,10 @@ enum tagRandBlockType {
 enum tagRandState {
 	WAIT,
 	CARRY,
-	NONE,
 
 };
 
-class CRandBlock 
+class CRandBlock //: public CObserver
 {
 private:
 	tagRandBlockType m_Type;
@@ -73,9 +75,14 @@ public:
 	void Exit();
 	void Draw(int hndl);
 
+	void Calc();
+
 public:
 	// 状態遷移をセット
 	void SetState(tagRandState state);
+	// 状態遷移ゲット
+	tagRandState GetState();
+
 	// 設置されたか確認
 	bool GetIsPut();
 	// 設置された時
