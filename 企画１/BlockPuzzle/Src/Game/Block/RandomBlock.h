@@ -50,7 +50,7 @@ enum tagRandBlockType
 enum tagRandState {
 	WAIT,
 	CARRY,
-
+	DONE,
 };
 
 class CRandBlock //: public CObserver
@@ -75,6 +75,7 @@ public:
 	void Exit();
 	void Draw(int hndl);
 
+	// 呼び出す
 	void Calc();
 
 public:
@@ -83,12 +84,11 @@ public:
 	// 状態遷移ゲット
 	tagRandState GetState();
 
-	// 設置されたか確認
-	bool GetIsPut();
-	// 設置された時
-	void IsPutOn();
+	// ブロックの種類の取得
+	tagRandBlockType GetType();
 
 private:
+	// 種類を決める
 	tagRandBlockType Random();
 };
 

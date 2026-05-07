@@ -19,42 +19,46 @@ void CRandBlock::Step(int x, int y)
 		m_X = x;
 		m_Y = y;
 		break;
+	case DONE:
+		break;
 	}
 }
 
 void CRandBlock::Exit()
 {
-	m_State = WAIT;
+	//m_State = WAIT;
 }
 
 void CRandBlock::Draw(int hndl)
 {
-	int left, right, up, down;
-	left = m_X - BLOCK_HALF;
-	right = m_X + BLOCK_HALF;
-	up = m_Y - BLOCK_HALF;
-	down = m_Y + BLOCK_HALF;
 
 	if (m_State == CARRY) {
+
+		int left, right, up, down;
+		left = m_X - BLOCK_HALF;
+		right = m_X + BLOCK_HALF;
+		up = m_Y - BLOCK_HALF;
+		down = m_Y + BLOCK_HALF;
+
 		switch (m_Type)
 		{
 		case TYPE_1:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			break;
 		case TYPE_2:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
 			break;
 		case TYPE_3:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 上
 			DrawModiGraph(left, up - BLOCK_SIZE, right, up - BLOCK_SIZE,
 				right, up, left, up, hndl, TRUE);
 			break;
 		case TYPE_4:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -63,7 +67,7 @@ void CRandBlock::Draw(int hndl)
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
 			break;
 		case TYPE_5:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 上
 			DrawModiGraph(left, up - BLOCK_SIZE, right, up - BLOCK_SIZE,
 				right, up, left, up, hndl, TRUE);
@@ -72,7 +76,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE, left, down + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_6:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -84,7 +88,7 @@ void CRandBlock::Draw(int hndl)
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
 			break;
 		case TYPE_7:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 上
 			DrawModiGraph(left, up - BLOCK_SIZE, right, up - BLOCK_SIZE,
 				right, up, left, up, hndl, TRUE);
@@ -96,7 +100,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE + BLOCK_SIZE, left, down + BLOCK_SIZE + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_8:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -111,7 +115,7 @@ void CRandBlock::Draw(int hndl)
 				right, down, left - BLOCK_SIZE, down, hndl, TRUE);
 			break;
 		case TYPE_9:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 上
 			DrawModiGraph(left, up - BLOCK_SIZE, right, up - BLOCK_SIZE,
 				right, up, left, up, hndl, TRUE);
@@ -126,7 +130,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE + BLOCK_SIZE, left, down + BLOCK_SIZE + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_10:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 左
 			DrawModiGraph(left - BLOCK_SIZE, up, left, up,
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
@@ -135,7 +139,7 @@ void CRandBlock::Draw(int hndl)
 				right, up, left, up, hndl, TRUE);
 			break;
 		case TYPE_11:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -144,7 +148,7 @@ void CRandBlock::Draw(int hndl)
 				right, up, left, up, hndl, TRUE);
 			break;
 		case TYPE_12:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -153,7 +157,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE, left, down + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_13:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 左
 			DrawModiGraph(left - BLOCK_SIZE, up, left, up,
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
@@ -162,7 +166,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE, left, down + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_14:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 左
 			DrawModiGraph(left - BLOCK_SIZE, up, left, up,
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
@@ -177,7 +181,7 @@ void CRandBlock::Draw(int hndl)
 				right, up - BLOCK_SIZE, left, up - BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_15:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -192,7 +196,7 @@ void CRandBlock::Draw(int hndl)
 				right, up - BLOCK_SIZE, left, up - BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_16:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -207,13 +211,13 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE + BLOCK_SIZE, left, down + BLOCK_SIZE + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_17:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 左
 			DrawModiGraph(left - BLOCK_SIZE, up, left, up,
 				left, down, left - BLOCK_SIZE, down, hndl, TRUE);
 			// 左 + 1
 			DrawModiGraph(left - BLOCK_SIZE - BLOCK_SIZE, up, left - BLOCK_SIZE, up,
-				right, down, left - BLOCK_SIZE, down, hndl, TRUE);
+				left - BLOCK_SIZE - BLOCK_SIZE, down, left - BLOCK_SIZE, down, hndl, TRUE);
 			// 下
 			DrawModiGraph(left, down, right, down,
 				right, down + BLOCK_SIZE, left, down + BLOCK_SIZE, hndl, TRUE);
@@ -222,7 +226,7 @@ void CRandBlock::Draw(int hndl)
 				right, down + BLOCK_SIZE + BLOCK_SIZE, left, down + BLOCK_SIZE + BLOCK_SIZE, hndl, TRUE);
 			break;
 		case TYPE_18:
-			DrawModiGraph(left, up, right, up, left, down, right, down, hndl, TRUE);
+			DrawModiGraph(left, up, right, up, right, down, left, down, hndl, TRUE);
 			// 右
 			DrawModiGraph(right, up, right + BLOCK_SIZE, up,
 				right + BLOCK_SIZE, down, right, down, hndl, TRUE);
@@ -269,21 +273,16 @@ tagRandState CRandBlock::GetState()
 	return m_State;
 }
 
-bool CRandBlock::GetIsPut()
+tagRandBlockType CRandBlock::GetType()
 {
-	return m_IsPut;
-}
-
-void CRandBlock::IsPutOn()
-{
-	m_IsPut = true;
+	return m_Type;
 }
 
 tagRandBlockType CRandBlock::Random()
 {
 	// ブロックを抽選
 	int i = -1;
-	i = CRand::Rand(0, (int)tagRandBlockType::NUMBER);
+	i = CRand::Rand(0, (int)(tagRandBlockType::NUMBER - 1));
 
 	return (tagRandBlockType)i;
 }

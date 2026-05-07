@@ -35,10 +35,10 @@ public:
 	// 中心座標取得
 	VECTOR GetPosition();
 
-	// 生存フラグ取得
+	// 設置フラグ取得
 	bool GetFlag();
 
-	// 生存フラグのセット
+	// 設置フラグのセット
 	void FlagOn();
 	void FlagOFF();
 };

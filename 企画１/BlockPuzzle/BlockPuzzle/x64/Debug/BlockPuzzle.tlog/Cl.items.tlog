@@ -2,6 +2,7 @@ C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Backgroun
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\src\Game\Block\Block.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\Block.obj
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\BlockManager.obj
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\RandomBlock.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\RandomBlock.obj
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\HitCheck.obj
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Observer\Observer.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\Observer.obj
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Observer\Subject.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\Subject.obj
 C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\src\Game\Player\Player.cpp;C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\BlockPuzzle\x64\Debug\Player.obj

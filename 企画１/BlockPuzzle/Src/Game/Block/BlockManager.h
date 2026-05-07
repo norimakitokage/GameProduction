@@ -22,6 +22,16 @@ const int BLOCK_HALF = (int)(BLOCK_SIZE * 0.5f);
 // 設置するブロックの選択肢の数
 const int CHOISE_NUM = 3;
 
+// 最初の位置
+const int RANDOM_BLOCK_X = (WINDOW_SIZE_X / 4) * 3;
+const int RANDOM_BLOCK_Y[CHOISE_NUM] = {
+	WINDOW_SIZE_Y / 4,
+	RANDOM_BLOCK_Y[0] * 2,
+	RANDOM_BLOCK_Y[0] * 3,
+};
+// 枠の半径
+const int RANDOM_BLOCK_RADIUS = RANDOM_BLOCK_Y[0] / 2;
+
 
 class CBlockManager
 {
@@ -52,7 +62,11 @@ public:
 	void Draw();
 
 public:
-	vector<vector<CBlock>> GetBlockVector();
+	vector<vector<CBlock>>* GetBlockVector();
 
+	vector<CRandBlock>* GetRBlockVector();
+
+	// RBlockの状態遷移をセット
+	void SetRBlockState(int num, tagRandState state);
 };
 

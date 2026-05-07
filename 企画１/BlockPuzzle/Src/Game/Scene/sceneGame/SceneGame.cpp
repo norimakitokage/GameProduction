@@ -2,6 +2,7 @@
 #include "../../../Common.h"
 #include "../../../Lib/Fade/Fade.h"
 #include "../../../Lib/Controll/Mouse/Mouse.h"
+#include "../../HitCheck/HitCheck.h"
 
 
 CSceneGame::CSceneGame() {
@@ -40,6 +41,8 @@ void CSceneGame::Init() {
 
 	m_Block.Init();
 
+	m_Player.Init();
+
 	m_State = LOAD;
 }
 
@@ -61,12 +64,27 @@ void CSceneGame::StartWait() {
 
 //çXêVèàóù
 void CSceneGame::Step() {
+	m_Player.Step();
 
-	m_Block.Step(1,1);
+	m_Block.Step(m_Player.GetX(), m_Player.GetY());
 
 	Update();
 
-	if (CMouse::Rep(MOUSE_INPUT_RIGHT)) {
+	if (CMouse::Rep(MOUSE_INPUT_LEFT) && !m_Player.GetIsCarry()) {
+		if (!m_Player.GetIsCarry()) {
+			CHitCheck::PlayerToRandomBlock(m_Player, m_Block);
+		}
+		else if(m_Block.){
+			CHitCheck::PlayerToBlock(m_Player, m_Block);
+		}
+	}
+
+	if (CMouse::Rep(MOUSE_INPUT_RIGHT) && m_Player.GetIsCarry()) {
+		m_Player.IsCarryOff();
+		m_Block.SetRBlockWait();
+	}
+
+	if (CMouse::Rep(MOUSE_INPUT_MIDDLE)) {
 		m_MemEnd = 1;
 		m_State = ENDWAIT;
 		CFade::RequestFadeOut();

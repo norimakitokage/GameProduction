@@ -27,15 +27,7 @@ const char* RANDOM_BLOCK_PATH[tagRandBlockType::NUMBER] = {
 	"Data/Graph/9.png",
 };
 
-// ç≈èâÇÃà íu
-const int RANDOM_BLOCK_X = (WINDOW_SIZE_X / 4) * 3;
-const int RANDOM_BLOCK_Y[CHOISE_NUM] = {
-	WINDOW_SIZE_Y / 4,
-	RANDOM_BLOCK_Y[0] * 2,
-	RANDOM_BLOCK_Y[0] * 3,
-};
-// ògÇÃîºåa
-const int RANDOM_BLOCK_RADIUS = RANDOM_BLOCK_Y[0] / 2;
+
 
 
 
@@ -55,6 +47,10 @@ void CBlockManager::Init()
 			int y = l * BLOCK_SIZE + BLOCK_HALF;
 			m_Block[i][l].Init(x, y);
 		}
+	}
+
+	for (int i = 0; i < CHOISE_NUM; i++) {
+		m_RBlock[i].Init();
 	}
 
 	m_BlockHndl = -1;
@@ -94,7 +90,21 @@ void CBlockManager::Step(int x, int y)
 	for (auto iterator : m_RBlock) {
 		iterator.Step(x, y);
 	}
-	
+
+	bool flag = true;
+
+	for (int i = 0; i < CHOISE_NUM; i++) {
+		m_RBlock[i].Step(x, y);
+
+		if (m_RBlock[i].GetIsPut() == false) {
+			flag = false;
+		}
+	}
+	if (flag == true) {
+		for (int i = 0; i < CHOISE_NUM; i++) {
+			m_RBlock[i].Calc();
+		}
+	}
 
 }
 
@@ -115,6 +125,7 @@ void CBlockManager::Exit()
 	}
 
 	m_Block.clear();
+	m_RBlock.clear();
 }
 
 void CBlockManager::Draw()
@@ -144,15 +155,31 @@ void CBlockManager::Draw()
 	for (int i = 0; i < CHOISE_NUM; i++) {
 		DrawBox(RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
 			RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS, WHITE, FALSE);
-		DrawModiGraph(RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
-			RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
-			RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS,
-			RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS, );
+		if (m_RBlock[i].GetState() == WAIT) {
+			DrawModiGraph(RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
+				RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] - RANDOM_BLOCK_RADIUS,
+				RANDOM_BLOCK_X + RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS,
+				RANDOM_BLOCK_X - RANDOM_BLOCK_RADIUS, RANDOM_BLOCK_Y[i] + RANDOM_BLOCK_RADIUS,
+				m_RBlockHndl[m_RBlock[i].GetType()], TRUE);
+		}
+		else if(m_RBlock[i].GetState() == CARRY) {
+			m_RBlock[i].Draw(m_BlockHndl);
+		}
 	}
 
 }
 
-vector<vector<CBlock>> CBlockManager::GetBlockVector()
+vector<vector<CBlock>>* CBlockManager::GetBlockVector()
 {
-	return m_Block;
+	return &m_Block;
+}
+
+vector<CRandBlock>* CBlockManager::GetRBlockVector()
+{
+	return &m_RBlock;
+}
+
+void CBlockManager::SetRBlockState(int num, tagRandState state)
+{
+	m_RBlock[num].SetState(state);
 }

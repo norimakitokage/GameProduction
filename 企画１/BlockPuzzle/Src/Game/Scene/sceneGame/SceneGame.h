@@ -1,6 +1,7 @@
 #pragma once
 #include <DxLib.h>
 #include "../../Block/BlockManager.h"
+#include "../../Player/Player.h"
 
 //•¡”‚ÌƒJƒƒ‰‚ğŠÇ—‚·‚é
 class CSceneGame {
@@ -22,6 +23,8 @@ private:
 
 private:
 	CBlockManager m_Block;
+
+	CPlayer m_Player;
 	
 public:
 	CSceneGame();
