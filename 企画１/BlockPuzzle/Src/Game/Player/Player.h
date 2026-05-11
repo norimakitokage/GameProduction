@@ -1,5 +1,6 @@
 #pragma once
 #include <DxLib.h>
+#include "../Block/RandomBlock.h"
 
 class CPlayer
 {
@@ -9,6 +10,7 @@ private:
 
 	bool m_IsCarry;	// プレイヤーが選択中かどうか
 	int m_CarryNum;	// 動かしてるブロックの配列番号
+	
 
 public:
 	void Init();

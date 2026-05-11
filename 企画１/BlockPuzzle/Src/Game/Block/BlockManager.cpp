@@ -1,5 +1,6 @@
 #include "BlockManager.h"
 #include "../../Common.h"
+#include "../../Lib/Admin/Data.h"
 
 const char* BLOCK_ANIM_PATH[BLOCK_ANIM_NUM] = {
 	"",
@@ -95,8 +96,7 @@ void CBlockManager::Step(int x, int y)
 
 	for (int i = 0; i < CHOISE_NUM; i++) {
 		m_RBlock[i].Step(x, y);
-
-		if (m_RBlock[i].GetIsPut() == false) {
+		if (m_RBlock[i].GetState() != DONE) {
 			flag = false;
 		}
 	}
@@ -167,6 +167,52 @@ void CBlockManager::Draw()
 		}
 	}
 
+}
+
+void CBlockManager::Check()
+{
+	int combo = 0;
+	int score = 0;
+	bool check = true;
+	// 縦方向の確認
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		for (int l = 0; l < ARRAY_SIZE; l++) {
+			if (!m_Block[i][l].GetFlag()) {
+				check = false;
+			}
+		}
+		if (check) {
+			combo += 1;
+			score += ARRAY_SIZE;
+			for (int n = 0; n < ARRAY_SIZE; n++) {
+				m_Block[i][n].FlagOFF();
+			}
+		}
+		else {
+			check = true;
+		}
+	}
+	// 横方向の確認
+	for (int l = 0; l < ARRAY_SIZE; l++) {
+		for (int i = 0; i < ARRAY_SIZE; i++) {
+			if (!m_Block[i][l].GetFlag()) {
+				check = false;
+			}
+		}
+		if (check) {
+			combo += 1;
+			score += ARRAY_SIZE;
+			for (int n = 0; n < ARRAY_SIZE; n++) {
+				m_Block[n][l].FlagOFF();
+			}
+		}
+		else {
+			check = true;
+		}
+	}
+
+	CData* data = CData::GetInstance();
+	data->AddScore(score * combo);
 }
 
 vector<vector<CBlock>>* CBlockManager::GetBlockVector()

@@ -1,5 +1,16 @@
-﻿  HitCheck.cpp
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(17,42): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(17,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(17,89): warning C4244: '引数': 'const int' から 'float' への変換です。データが失われる可能性があります。
+﻿  BlockManager.cpp
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(139,17): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(140,18): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(141,15): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(142,17): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+  RandomBlock.cpp
+  HitCheck.cpp
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(313,42): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(313,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(313,89): warning C4244: '引数': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  Scene.cpp
+  SceneGame.cpp
+  Main.cpp
+  コードを生成中...
+C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\HitCheck\HitCheck.cpp(303,1): warning C4715: 'CHitCheck::PlayerToBlock': 値を返さないコントロール パスがあります。
   BlockPuzzle.vcxproj -> C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\x64\Debug\BlockPuzzle.exe

@@ -68,5 +68,8 @@ public:
 
 	// RBlockの状態遷移をセット
 	void SetRBlockState(int num, tagRandState state);
+	
+	// 縦横がブロックで埋まったかを確認 
+	void Check();
 };
 

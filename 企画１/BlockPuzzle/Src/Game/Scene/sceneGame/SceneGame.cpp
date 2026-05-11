@@ -68,27 +68,35 @@ void CSceneGame::Step() {
 
 	m_Block.Step(m_Player.GetX(), m_Player.GetY());
 
-	Update();
-
-	if (CMouse::Rep(MOUSE_INPUT_LEFT) && !m_Player.GetIsCarry()) {
+	if (CMouse::Rep(MOUSE_INPUT_LEFT)) {
+		// ブロックを持ち上げる処理
 		if (!m_Player.GetIsCarry()) {
 			CHitCheck::PlayerToRandomBlock(m_Player, m_Block);
 		}
-		else if(m_Block.){
-			CHitCheck::PlayerToBlock(m_Player, m_Block);
+		// ブロックを設置する処理
+		else {
+			bool res = CHitCheck::PlayerToBlock(m_Player, m_Block);
+			if (res == true) {
+				m_Block.SetRBlockState(m_Player.GetCarryNum(), DONE);
+				m_Block.Check();
+			}
 		}
 	}
 
+	// ブロックを手放す処理
 	if (CMouse::Rep(MOUSE_INPUT_RIGHT) && m_Player.GetIsCarry()) {
 		m_Player.IsCarryOff();
-		m_Block.SetRBlockWait();
+		m_Block.SetRBlockState(m_Player.GetCarryNum(), WAIT);
 	}
 
+	// ゲーム終了処理
 	if (CMouse::Rep(MOUSE_INPUT_MIDDLE)) {
 		m_MemEnd = 1;
 		m_State = ENDWAIT;
 		CFade::RequestFadeOut();
 	}
+
+	Update();
 }
 
 void CSceneGame::Update() {

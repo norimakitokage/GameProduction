@@ -5,8 +5,7 @@
 class CHitCheck
 {
 public:
-	static void PlayerToBlock(CPlayer &player, CBlockManager &block);
+	static bool PlayerToBlock(CPlayer &player, CBlockManager &block);
 
 	static void PlayerToRandomBlock(CPlayer& player, CBlockManager& block);
-
 };

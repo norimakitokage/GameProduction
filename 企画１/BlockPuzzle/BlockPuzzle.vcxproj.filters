@@ -70,9 +70,6 @@
     <Filter Include="ソース ファイル\Game\HitCheck">
       <UniqueIdentifier>{a4bff42f-d7fc-44e2-a7b1-61f8481d23a6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Game\Check">
-      <UniqueIdentifier>{79d2107d-d525-4a5d-9ae8-d6fc83174c34}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Common.h">
