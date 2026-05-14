@@ -171,9 +171,18 @@ void CBlockManager::Draw()
 
 void CBlockManager::Check()
 {
+	// c•ûŒü‚ğ•\‚·
+	const int ver = 0;
+	// ‰¡•ûŒü‚ğ•\‚·
+	const int hori = 1;
+
 	int combo = 0;
 	int score = 0;
 	bool check = true;
+
+	vector<vector<int>> mem;
+	mem.clear();
+
 	// c•ûŒü‚ÌŠm”F
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		for (int l = 0; l < ARRAY_SIZE; l++) {
@@ -182,11 +191,7 @@ void CBlockManager::Check()
 			}
 		}
 		if (check) {
-			combo += 1;
-			score += ARRAY_SIZE;
-			for (int n = 0; n < ARRAY_SIZE; n++) {
-				m_Block[i][n].FlagOFF();
-			}
+			mem.push_back({ ver, i });
 		}
 		else {
 			check = true;
@@ -200,16 +205,32 @@ void CBlockManager::Check()
 			}
 		}
 		if (check) {
-			combo += 1;
-			score += ARRAY_SIZE;
-			for (int n = 0; n < ARRAY_SIZE; n++) {
-				m_Block[n][l].FlagOFF();
-			}
+			mem.push_back({ hori, l });
 		}
 		else {
 			check = true;
 		}
 	}
+
+	for (int i = 0; i < mem.size(); ++i) {
+		int type = mem[i][0];	// c‰¡”»’f
+		int mat = mem[i][1];	// s—ñ
+
+		if (type == hori) {
+			for (int n = 0; n < ARRAY_SIZE; n++) {
+				m_Block[n][mat].FlagOFF();
+			}
+		}
+		else if (type == ver) {
+			for (int n = 0; n < ARRAY_SIZE; n++) {
+				m_Block[mat][n].FlagOFF();
+			}
+		}
+
+		combo += 1;
+		score += ARRAY_SIZE;
+	}
+	mem.clear();
 
 	CData* data = CData::GetInstance();
 	data->AddScore(score * combo);
