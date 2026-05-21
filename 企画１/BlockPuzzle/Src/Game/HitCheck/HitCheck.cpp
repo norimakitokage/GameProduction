@@ -11,19 +11,19 @@ bool CHitCheck::PlayerToBlock(CPlayer& player, CBlockManager& block)
 	plPos.x = (float)player.GetX();
 	plPos.y = (float)player.GetY();
 	plPos.z = 0.0f;
-	int i, l;
-	for (i = 0; i < ARRAY_SIZE; i++) {
-		for (l = 0; l < ARRAY_SIZE; l++) {
+
+	for (int x = 0; x < ARRAY_SIZE; x++) {
+		for (int y = 0; y < ARRAY_SIZE; y++) {
 			VECTOR pos;
-			pos = bl[i][l].GetPosition();
+			pos = bl[x][y].GetPosition();
 			bool flag = CColl::DotToSquare(plPos, pos, BLOCK_SIZE, BLOCK_SIZE);
 			if (flag) {
 				tagRandBlockType type = rbl[player.GetCarryNum()].GetType();
 				switch (type)
 				{
 				case TYPE_1:
-					if (!bl[i][l].GetFlag()) {
-						bl[i][l].FlagOn();
+					if (!bl[x][y].GetFlag()) {
+						bl[x][y].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
@@ -31,266 +31,266 @@ bool CHitCheck::PlayerToBlock(CPlayer& player, CBlockManager& block)
 					break;
 				case TYPE_2:
 					// 配列の大きさ確認
-					if (i >= ARRAY_SIZE - 1) {
+					if (x >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i + 1][l].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i + 1][l].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x + 1][y].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x + 1][y].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_3:
 					// 配列の大きさ確認
-					if (l <= 0) {
+					if (y <= 0) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i][l - 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i][l - 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x][y - 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x][y - 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_4:
 					// 配列の大きさ確認
-					if (i <= 0 || i >= ARRAY_SIZE - 1) {
+					if (x <= 0 || x >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i + 1][l].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i + 1][l].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x + 1][y].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x + 1][y].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_5:
 					// 配列の大きさ確認
-					if (l <= 0 || l >= ARRAY_SIZE - 1) {
+					if (y <= 0 || y >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i][l - 1].GetFlag() && !bl[i][l + 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l + 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x][y - 1].GetFlag() && !bl[x][y + 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y + 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_6:
 					// 配列の大きさ確認
-					if (i <= 0 || i >= ARRAY_SIZE - 2) {
+					if (x <= 0 || x >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i + 1][l].GetFlag() 
-						&& !bl[i + 2][l].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i + 2][l].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x + 1][y].GetFlag() 
+						&& !bl[x + 2][y].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x + 2][y].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_7:
 					// 配列の大きさ確認
-					if (l <= 0 || l >= ARRAY_SIZE - 2) {
+					if (y <= 0 || y >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i][l - 1].GetFlag() && !bl[i][l + 1].GetFlag()
-						&& !bl[i][l + 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l + 1].FlagOn();
-						bl[i][l + 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x][y - 1].GetFlag() && !bl[x][y + 1].GetFlag()
+						&& !bl[x][y + 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y + 1].FlagOn();
+						bl[x][y + 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_8:
 					// 配列の大きさ確認
-					if (i <= 1 || i >= ARRAY_SIZE - 2) {
+					if (x <= 1 || x >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i - 2][l].GetFlag()
-						&& !bl[i + 1][l].GetFlag() && !bl[i + 2][l].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i - 2][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i + 2][l].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x - 2][y].GetFlag()
+						&& !bl[x + 1][y].GetFlag() && !bl[x + 2][y].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x - 2][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x + 2][y].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_9:
 					// 配列の大きさ確認
-					if (l <= 1 || l >= ARRAY_SIZE - 2) {
+					if (y <= 1 || y >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i][l - 1].GetFlag() && !bl[i][l - 2].GetFlag()
-						&& !bl[i][l + 1].GetFlag() && !bl[i][l + 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l - 2].FlagOn();
-						bl[i][l + 1].FlagOn();
-						bl[i][l + 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x][y - 1].GetFlag() && !bl[x][y - 2].GetFlag()
+						&& !bl[x][y + 1].GetFlag() && !bl[x][y + 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y - 2].FlagOn();
+						bl[x][y + 1].FlagOn();
+						bl[x][y + 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_10:
 					// 配列の大きさ確認
-					if (i <= 0 || l <= 0) {
+					if (x <= 0 || y <= 0) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i][l - 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i][l - 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x][y - 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x][y - 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_11:
 					// 配列の大きさ確認
-					if (i >= ARRAY_SIZE - 1 || l <= 0) {
+					if (x >= ARRAY_SIZE - 1 || y <= 0) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i + 1][l].GetFlag() && !bl[i][l - 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i][l - 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x + 1][y].GetFlag() && !bl[x][y - 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x][y - 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_12:
 					// 配列の大きさ確認
-					if (i >= ARRAY_SIZE - 1 || l >= ARRAY_SIZE - 1) {
+					if (x >= ARRAY_SIZE - 1 || y >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i + 1][l].GetFlag() && !bl[i][l + 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i][l + 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x + 1][y].GetFlag() && !bl[x][y + 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x][y + 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_13:
 					// 配列の大きさ確認
-					if (i <= 0 || l >= ARRAY_SIZE - 1) {
+					if (x <= 0 || y >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i][l + 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i][l + 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x][y + 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x][y + 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_14:
 					// 配列の大きさ確認
-					if (i <= 1 || l <= 1) {
+					if (x <= 1 || y <= 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i - 2][l].GetFlag()
-						&& !bl[i][l - 1].GetFlag() && !bl[i][l - 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i - 2][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l - 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x - 2][y].GetFlag()
+						&& !bl[x][y - 1].GetFlag() && !bl[x][y - 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x - 2][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y - 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_15:
 					// 配列の大きさ確認
-					if (i >= ARRAY_SIZE - 2 || l <= 1) {
+					if (x >= ARRAY_SIZE - 2 || y <= 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i + 1][l].GetFlag() && !bl[i + 2][l].GetFlag()
-						&& !bl[i][l - 1].GetFlag() && !bl[i][l - 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i + 2][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l - 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x + 1][y].GetFlag() && !bl[x + 2][y].GetFlag()
+						&& !bl[x][y - 1].GetFlag() && !bl[x][y - 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x + 2][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y - 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_16:
 					// 配列の大きさ確認
-					if (i >= ARRAY_SIZE - 2 || l >= ARRAY_SIZE - 2) {
+					if (x >= ARRAY_SIZE - 2 || y >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i + 1][l].GetFlag() && !bl[i + 2][l].GetFlag()
-						&& !bl[i][l + 1].GetFlag() && !bl[i][l + 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i + 2][l].FlagOn();
-						bl[i][l + 1].FlagOn();
-						bl[i][l + 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x + 1][y].GetFlag() && !bl[x + 2][y].GetFlag()
+						&& !bl[x][y + 1].GetFlag() && !bl[x][y + 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x + 2][y].FlagOn();
+						bl[x][y + 1].FlagOn();
+						bl[x][y + 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_17:
 					// 配列の大きさ確認
-					if (i <= 0 || l >= ARRAY_SIZE - 2) {
+					if (x <= 0 || y >= ARRAY_SIZE - 2) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i - 1][l].GetFlag() && !bl[i - 2][l].GetFlag()
-						&& !bl[i][l + 1].GetFlag() && !bl[i][l + 2].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i - 2][l].FlagOn();
-						bl[i][l + 1].FlagOn();
-						bl[i][l + 2].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x - 1][y].GetFlag() && !bl[x - 2][y].GetFlag()
+						&& !bl[x][y + 1].GetFlag() && !bl[x][y + 2].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x - 2][y].FlagOn();
+						bl[x][y + 1].FlagOn();
+						bl[x][y + 2].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}
 					break;
 				case TYPE_18:
 					// 配列の大きさ確認
-					if (i <= 0 || i >= ARRAY_SIZE - 1 || l <= 0 || l >= ARRAY_SIZE - 1) {
+					if (x <= 0 || x >= ARRAY_SIZE - 1 || y <= 0 || y >= ARRAY_SIZE - 1) {
 						return false;
 					}
 					// まだ置かれていないなら設置
-					if (!bl[i][l].GetFlag() && !bl[i][l - 1].GetFlag() && !bl[i][l + 1].GetFlag()
-						&& !bl[i - 1][l].GetFlag() && !bl[i - 1][l - 1].GetFlag() && !bl[i - 1][l + 1].GetFlag()
-						&& !bl[i + 1][l].GetFlag() && !bl[i + 1][l - 1].GetFlag() && !bl[i + 1][l + 1].GetFlag()) {
-						bl[i][l].FlagOn();
-						bl[i][l - 1].FlagOn();
-						bl[i][l + 1].FlagOn();
-						bl[i - 1][l].FlagOn();
-						bl[i - 1][l - 1].FlagOn();
-						bl[i - 1][l + 1].FlagOn();
-						bl[i + 1][l].FlagOn();
-						bl[i + 1][l - 1].FlagOn();
-						bl[i + 1][l + 1].FlagOn();
+					if (!bl[x][y].GetFlag() && !bl[x][y - 1].GetFlag() && !bl[x][y + 1].GetFlag()
+						&& !bl[x - 1][y].GetFlag() && !bl[x - 1][y - 1].GetFlag() && !bl[x - 1][y + 1].GetFlag()
+						&& !bl[x + 1][y].GetFlag() && !bl[x + 1][y - 1].GetFlag() && !bl[x + 1][y + 1].GetFlag()) {
+						bl[x][y].FlagOn();
+						bl[x][y - 1].FlagOn();
+						bl[x][y + 1].FlagOn();
+						bl[x - 1][y].FlagOn();
+						bl[x - 1][y - 1].FlagOn();
+						bl[x - 1][y + 1].FlagOn();
+						bl[x + 1][y].FlagOn();
+						bl[x + 1][y - 1].FlagOn();
+						bl[x + 1][y + 1].FlagOn();
 						player.IsCarryOff();
 						return true;
 					}

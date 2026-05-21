@@ -36,6 +36,8 @@ public:
 	VECTOR GetPosition();
 
 	// 設置フラグ取得
+	// true  : 設置された
+	// false : 設置されていない
 	bool GetFlag();
 
 	// 設置フラグのセット

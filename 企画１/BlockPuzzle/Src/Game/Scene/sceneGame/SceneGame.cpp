@@ -7,7 +7,7 @@
 
 CSceneGame::CSceneGame() {
 	m_State = INIT;
-
+	m_End = true;
 }
 
 CSceneGame::~CSceneGame() {
@@ -38,6 +38,8 @@ void CSceneGame::Draw() {
 void CSceneGame::Init() {
 	m_EndingNum = -1;
 	m_MemEnd = -1;
+
+	m_End = true;
 
 	m_Block.Init();
 
@@ -79,6 +81,7 @@ void CSceneGame::Step() {
 			if (res == true) {
 				m_Block.SetRBlockState(m_Player.GetCarryNum(), DONE);
 				m_Block.Check();
+				m_End = m_Block.IsContinue();
 			}
 		}
 	}
@@ -90,7 +93,7 @@ void CSceneGame::Step() {
 	}
 
 	// ÉQÅ[ÉÄèIóπèàóù
-	if (CMouse::Rep(MOUSE_INPUT_MIDDLE)) {
+	if (!m_End) {
 		m_MemEnd = 1;
 		m_State = ENDWAIT;
 		CFade::RequestFadeOut();

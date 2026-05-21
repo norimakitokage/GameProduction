@@ -21,6 +21,7 @@ private:
 	int m_EndingNum;			//Loopのリターンで返す変数A
 	int m_MemEnd;				//次のシーンの分岐を記憶
 
+	bool m_End;		// 終了フラグ
 private:
 	CBlockManager m_Block;
 

@@ -71,5 +71,10 @@ public:
 	
 	// 縦横がブロックで埋まったかを確認 
 	void Check();
+
+	// ブロックが置けるか確認
+	// true  : 継続
+	// false : 終了
+	bool IsContinue();
 };
 

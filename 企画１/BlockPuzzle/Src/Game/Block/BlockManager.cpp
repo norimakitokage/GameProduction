@@ -236,6 +236,217 @@ void CBlockManager::Check()
 	data->AddScore(score * combo);
 }
 
+bool CBlockManager::IsContinue()
+{
+	int count = 0;
+
+	for (int i = 0; i < CHOISE_NUM; i++) {
+		// 設置済みだったら無視する
+		if (m_RBlock[i].GetState() == tagRandState::DONE) {
+			count++;
+			continue;
+		}
+
+		for (int x = 0; x < ARRAY_SIZE; x++) {
+			for (int y = 0; y < ARRAY_SIZE; y++) {
+				switch (m_RBlock[i].GetType())
+				{
+					// 1ブロック
+				case TYPE_1:
+					if (!m_Block[x][y].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 2ブロック(横)
+				case TYPE_2:
+					if (x >= ARRAY_SIZE - 1) continue;
+					if (!m_Block[x][y].GetFlag() && !m_Block[x + 1][y].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 2ブロック(縦)
+				case TYPE_3:
+					if (y <= 0) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x][y - 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(横)
+				case TYPE_4:
+					// 配列の大きさ確認
+					if (x <= 0 || x >= ARRAY_SIZE - 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x + 1][y].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(縦)
+				case TYPE_5:
+					// 配列の大きさ確認
+					if (y <= 0 || y >= ARRAY_SIZE - 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x][y - 1].GetFlag() && !m_Block[x][y + 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 4ブロック(横)
+				case TYPE_6:
+					// 配列の大きさ確認
+					if (x <= 0 || x >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x + 1][y].GetFlag()
+						&& !m_Block[x + 2][y].GetFlag()){
+						return true;
+					}
+					break;
+
+					// 4ブロック(縦)
+				case TYPE_7:
+					// 配列の大きさ確認
+					if (y <= 0 || y >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x][y - 1].GetFlag() && !m_Block[x][y + 1].GetFlag()
+						&& !m_Block[x][y + 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(横)
+				case TYPE_8:
+					// 配列の大きさ確認
+					if (x <= 1 || x >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x - 2][y].GetFlag()
+						&& !m_Block[x + 1][y].GetFlag() && !m_Block[x + 2][y].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(縦)
+				case TYPE_9:
+					// 配列の大きさ確認
+					if (y <= 1 || y >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x][y - 1].GetFlag() && !m_Block[x][y - 2].GetFlag()
+						&& !m_Block[x][y + 1].GetFlag() && !m_Block[x][y + 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(左上)
+				case TYPE_10:
+					// 配列の大きさ確認
+					if (x <= 0 || y <= 0) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x][y - 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(右上)
+				case TYPE_11:
+					// 配列の大きさ確認
+					if (x >= ARRAY_SIZE - 1 || y <= 0) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x + 1][y].GetFlag() && !m_Block[x][y - 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(右下)
+				case TYPE_12:
+					// 配列の大きさ確認
+					if (x >= ARRAY_SIZE - 1 || y >= ARRAY_SIZE - 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x + 1][y].GetFlag() && !m_Block[x][y + 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 3ブロック(左下)
+				case TYPE_13:
+					// 配列の大きさ確認
+					if (x <= 0 || y >= ARRAY_SIZE - 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x][y + 1].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(左上)
+				case TYPE_14:
+					// 配列の大きさ確認
+					if (x <= 1 || y <= 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x - 2][y].GetFlag()
+						&& !m_Block[x][y - 1].GetFlag() && !m_Block[x][y - 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(右上)
+				case TYPE_15:
+					// 配列の大きさ確認
+					if (x >= ARRAY_SIZE - 2 || y <= 1) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x + 1][y].GetFlag() && !m_Block[x + 2][y].GetFlag()
+						&& !m_Block[x][y - 1].GetFlag() && !m_Block[x][y - 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(右下)
+				case TYPE_16:
+					// 配列の大きさ確認
+					if (x >= ARRAY_SIZE - 2 || y >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x + 1][y].GetFlag() && !m_Block[x + 2][y].GetFlag()
+						&& !m_Block[x][y + 1].GetFlag() && !m_Block[x][y + 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 5ブロック(左下)
+				case TYPE_17:
+					// 配列の大きさ確認
+					if (x <= 0 || y >= ARRAY_SIZE - 2) continue;
+					// まだ置かれていないなら
+					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x - 2][y].GetFlag()
+						&& !m_Block[x][y + 1].GetFlag() && !m_Block[x][y + 2].GetFlag()) {
+						return true;
+					}
+					break;
+
+					// 9ブロック(正方形)
+				case TYPE_18:
+					// 配列の大きさ確認
+					if (x <= 0 || x >= ARRAY_SIZE - 1 || y <= 0 || y >= ARRAY_SIZE - 1) continue;
+					// まだ置かれていないなら設置
+					if (!m_Block[x][y].GetFlag() && !m_Block[x][y - 1].GetFlag() && !m_Block[x][y + 1].GetFlag()
+						&& !m_Block[x - 1][y].GetFlag() && !m_Block[x - 1][y - 1].GetFlag() && !m_Block[x - 1][y + 1].GetFlag()
+						&& !m_Block[x + 1][y].GetFlag() && !m_Block[x + 1][y - 1].GetFlag() && !m_Block[x + 1][y + 1].GetFlag()) {
+						return true;
+					}
+					break;
+				}
+			}
+		}
+	}
+
+	if (count >= CHOISE_NUM) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
 vector<vector<CBlock>>* CBlockManager::GetBlockVector()
 {
 	return &m_Block;
