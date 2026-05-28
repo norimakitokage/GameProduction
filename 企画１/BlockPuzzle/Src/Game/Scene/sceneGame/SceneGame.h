@@ -2,6 +2,7 @@
 #include <DxLib.h>
 #include "../../Block/BlockManager.h"
 #include "../../Player/Player.h"
+#include "../../Background/Background.h"
 
 //•¡”‚ÌƒJƒƒ‰‚ğŠÇ—‚·‚é
 class CSceneGame {
@@ -26,6 +27,8 @@ private:
 	CBlockManager m_Block;
 
 	CPlayer m_Player;
+
+	CBackground m_Bg;
 	
 public:
 	CSceneGame();

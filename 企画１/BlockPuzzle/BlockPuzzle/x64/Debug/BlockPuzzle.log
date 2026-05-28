@@ -1,6 +1,2 @@
-﻿  BlockManager.cpp
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(139,17): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(140,18): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(141,15): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\Src\Game\Block\BlockManager.cpp(142,17): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+﻿  SceneTitle.cpp
   BlockPuzzle.vcxproj -> C:\Users\2409409\Desktop\GameProduction\企画１\BlockPuzzle\x64\Debug\BlockPuzzle.exe

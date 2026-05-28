@@ -13,7 +13,6 @@ private:
 public:
 	void Init();
 	void Load();
-	void Step();
 	void Exit();
 	void Draw();
 };

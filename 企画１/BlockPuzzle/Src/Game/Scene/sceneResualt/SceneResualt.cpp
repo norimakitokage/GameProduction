@@ -2,7 +2,7 @@
 #include "../../../Common.h"
 #include "../../../Lib/Fade/Fade.h"
 #include "../../../Lib/Controll/Mouse/Mouse.h"
-
+#include "../../../Lib/Admin/Data.h"
 
 CSceneResualt::CSceneResualt() {
 	m_state = INIT;
@@ -26,14 +26,23 @@ int CSceneResualt::Loop() {
 
 //描画
 void CSceneResualt::Draw() {
-	DrawFormatString(20, 20, RED, "リザルトシーン");
+	//DrawFormatString(20, 20, RED, "リザルトシーン");
 	DrawRotaGraph(WINDOW_SENTER_X, WINDOW_SENTER_Y, 1.0f, 0.0f, m_hndl, true);
+
+	CData* data = CData::GetInstance();
+
+	SetFontSize(64);
+	DrawFormatString(WINDOW_SENTER_X * 0.5f, WINDOW_SENTER_Y - (64 * 2), WHITE, "SCORE");
+	DrawFormatString(WINDOW_SENTER_X * 0.5f, WINDOW_SENTER_Y , WHITE, "%d", data->GetScore());
+	SetFontSize(16);
 }
 
 //初期化
 void CSceneResualt::Init() {
 	m_endingNum = -1;
 	m_memEnd = -1;
+
+	m_hndl = -1;
 
 	m_state = LOAD;
 }
@@ -42,7 +51,7 @@ void CSceneResualt::Init() {
 void CSceneResualt::Load() {
 
 	if (m_hndl == -1) {
-		m_hndl = LoadGraph("");
+		m_hndl = LoadGraph("Data/Graph/res.jpg");
 	}
 
 	CFade::RequestFadeIn();		//フェードイン呼び出し
@@ -76,6 +85,8 @@ void CSceneResualt::EndWait() {
 void CSceneResualt::Exit() {
 	m_state = INIT;
 	m_endingNum = m_memEnd;
+
+	CData::DeleteInstance();
 
 	if (m_hndl != -1) {
 		DeleteGraph(m_hndl);

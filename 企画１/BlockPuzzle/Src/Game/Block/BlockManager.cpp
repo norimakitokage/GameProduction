@@ -1,6 +1,7 @@
 #include "BlockManager.h"
 #include "../../Common.h"
 #include "../../Lib/Admin/Data.h"
+#include "../System/UI/UI.h"
 
 const char* BLOCK_ANIM_PATH[BLOCK_ANIM_NUM] = {
 	"",
@@ -234,6 +235,9 @@ void CBlockManager::Check()
 
 	CData* data = CData::GetInstance();
 	data->AddScore(score * combo);
+	if (combo > 1) {
+		CUI::Request(combo);
+	}
 }
 
 bool CBlockManager::IsContinue()
@@ -278,7 +282,7 @@ bool CBlockManager::IsContinue()
 					// 3ブロック(横)
 				case TYPE_4:
 					// 配列の大きさ確認
-					if (x <= 0 || x >= ARRAY_SIZE - 1) continue;
+					if (x <= 1 || x >= ARRAY_SIZE - 1) continue;
 					// まだ置かれていないなら
 					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x + 1][y].GetFlag()) {
 						return true;
@@ -415,7 +419,7 @@ bool CBlockManager::IsContinue()
 					// 5ブロック(左下)
 				case TYPE_17:
 					// 配列の大きさ確認
-					if (x <= 0 || y >= ARRAY_SIZE - 2) continue;
+					if (x <= 1 || y >= ARRAY_SIZE - 2) continue;
 					// まだ置かれていないなら
 					if (!m_Block[x][y].GetFlag() && !m_Block[x - 1][y].GetFlag() && !m_Block[x - 2][y].GetFlag()
 						&& !m_Block[x][y + 1].GetFlag() && !m_Block[x][y + 2].GetFlag()) {

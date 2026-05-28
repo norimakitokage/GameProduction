@@ -70,6 +70,9 @@
     <Filter Include="ソース ファイル\Game\HitCheck">
       <UniqueIdentifier>{a4bff42f-d7fc-44e2-a7b1-61f8481d23a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game\System\UI">
+      <UniqueIdentifier>{dec9face-e8c3-4c78-b502-7e0240912c97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Common.h">
@@ -138,6 +141,9 @@
     <ClInclude Include="Src\Game\HitCheck\HitCheck.h">
       <Filter>ソース ファイル\Game\HitCheck</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Game\System\UI\UI.h">
+      <Filter>ソース ファイル\Game\System\UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">
@@ -205,6 +211,9 @@
     </ClCompile>
     <ClCompile Include="Src\Game\HitCheck\HitCheck.cpp">
       <Filter>ソース ファイル\Game\HitCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\System\UI\UI.cpp">
+      <Filter>ソース ファイル\Game\System\UI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

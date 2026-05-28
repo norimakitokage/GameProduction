@@ -28,12 +28,18 @@ int CSceneTitle::Loop() {
 void CSceneTitle::Draw() {
 	DrawFormatString(20, 20, RED, "タイトルシーン");
 	DrawRotaGraph(WINDOW_SENTER_X, WINDOW_SENTER_Y, 1.0f, 0.0f, m_hndl, true);
+
+	SetFontSize(128);
+	DrawFormatString(WINDOW_SENTER_X - (64 * 3), WINDOW_SENTER_Y - 150, RED, "PUZZLE");
+	SetFontSize(16);
 }
 
 //初期化
 void CSceneTitle::Init() {
 	m_endingNum = -1;
 	m_memEnd = -1;
+
+	m_hndl = -1;
 	
 	m_state = LOAD;
 }
@@ -42,7 +48,7 @@ void CSceneTitle::Init() {
 void CSceneTitle::Load() {
 	
 	if (m_hndl == -1) {
-		m_hndl = LoadGraph("");
+		m_hndl = LoadGraph("Data/Graph/title.jpg");
 	}
 
 	CFade::RequestFadeIn();		//フェードイン呼び出し

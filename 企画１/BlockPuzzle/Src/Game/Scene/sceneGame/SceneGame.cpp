@@ -3,6 +3,7 @@
 #include "../../../Lib/Fade/Fade.h"
 #include "../../../Lib/Controll/Mouse/Mouse.h"
 #include "../../HitCheck/HitCheck.h"
+#include "../../System/UI/UI.h"
 
 
 CSceneGame::CSceneGame() {
@@ -30,7 +31,13 @@ int CSceneGame::Loop() {
 void CSceneGame::Draw() {
 	//DrawFormatString(20, 20, RED, "プレイシーン");
 
+	m_Bg.Draw();
+
 	m_Block.Draw();
+
+	CUI::DrawScore();
+
+	CUI::DrawRate();
 	
 }
 
@@ -45,6 +52,10 @@ void CSceneGame::Init() {
 
 	m_Player.Init();
 
+	m_Bg.Init();
+
+	CUI::Init();
+
 	m_State = LOAD;
 }
 
@@ -52,6 +63,10 @@ void CSceneGame::Init() {
 void CSceneGame::Load() {
 	
 	m_Block.Load();
+
+	m_Bg.Load();
+
+	CUI::Load();
 
 	CFade::RequestFadeIn();		//フェードイン呼び出し
 	m_State = STARTWAIT;		//スタート待機へ
@@ -118,6 +133,7 @@ void CSceneGame::Exit() {
 
 	m_Block.Exit();
 
+	m_Bg.Exit();
 
 	m_State = INIT;
 	m_EndingNum = m_MemEnd;

@@ -153,6 +153,7 @@
     <ClInclude Include="src\Game\Scene\sceneResualt\SceneResualt.h" />
     <ClInclude Include="src\Game\Scene\sceneTitle\SceneTitle.h" />
     <ClInclude Include="src\Game\System\sound\SoundManager.h" />
+    <ClInclude Include="Src\Game\System\UI\UI.h" />
     <ClInclude Include="src\Lib\Admin\Data.h" />
     <ClInclude Include="src\Lib\Admin\Debug.h" />
     <ClInclude Include="src\Lib\Collision\Collision.h" />
@@ -176,6 +177,7 @@
     <ClCompile Include="src\Game\Scene\sceneResualt\SceneResualt.cpp" />
     <ClCompile Include="src\Game\Scene\sceneTitle\SceneTitle.cpp" />
     <ClCompile Include="src\Game\System\sound\SoundManager.cpp" />
+    <ClCompile Include="Src\Game\System\UI\UI.cpp" />
     <ClCompile Include="src\Lib\Admin\Data.cpp" />
     <ClCompile Include="src\Lib\Admin\Debug.cpp" />
     <ClCompile Include="src\Lib\Collision\Collision.cpp" />
