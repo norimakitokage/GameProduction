@@ -7,6 +7,7 @@ void CSceneTitle::Draw()
 
 void CSceneTitle::Init()
 {
+	m_State = LOAD;
 }
 
 void CSceneTitle::Load()

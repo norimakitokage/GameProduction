@@ -22,18 +22,18 @@ private:
 	// 現在のシーン
 	//tagSceneType m_State;
 	// 現在動かしているシーン
-	CSceneBase* m_Scene;
+	static CSceneBase* m_Scene;
 
 public:
 	// 初期化
-	void Init();
+	static void Init();
 	// 更新
-	void Step();
+	static void Step();
 	// 描画
-	void Draw();
+	static void Draw();
 
 public:
 	// シーンの変更処理
-	void SetSceneType(tagSceneType type);
+	static void SetSceneType(tagSceneType type);
 
 };

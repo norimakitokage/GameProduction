@@ -4,6 +4,8 @@
 #include "SceneDefeat/SceneDefeat.h"
 #include "SceneClear/SceneClear.h"
 
+CSceneBase* CScene::m_Scene = nullptr;
+
 void CScene::Init()
 {
 	m_Scene = new CSceneTitle();
@@ -38,5 +40,4 @@ void CScene::SetSceneType(tagSceneType type)
 		m_Scene = new CSceneClear();
 		break;
 	}
-
 }

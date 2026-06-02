@@ -37,7 +37,7 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	g_Fps.InitFps();
 
 	//シーン管理クラス
-	
+	CScene::Init();
 
 	//ゲームメインループ
 	while (ProcessMessage() != -1)	// 問題が発生したら終了
@@ -60,8 +60,8 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 		//シーン管理＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-		
-
+		CScene::Step();
+		CScene::Draw();
 		//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 		//デバッグ用
