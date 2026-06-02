@@ -3,21 +3,25 @@
 #include "SceneGame/SceneGame.h"
 #include "SceneDefeat/SceneDefeat.h"
 #include "SceneClear/SceneClear.h"
+#include "../../Lib/Fade/Fade.h"
 
 CSceneBase* CScene::m_Scene = nullptr;
 
 void CScene::Init()
 {
+	CFade::Init();
 	m_Scene = new CSceneTitle();
 }
 
 void CScene::Step()
 {
+	CFade::Step();
 	m_Scene->Loop();
 }
 
 void CScene::Draw()
 {
+	CFade::Draw();
 	m_Scene->Draw();
 }
 

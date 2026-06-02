@@ -1,8 +1,10 @@
 #include <DxLib.h>			// DxLibを使用するために必須
 #include "Common.h"
-#include "Lib/controll/mouse/mouse.h"
 #include "Game/Scene/Scene.h"
 #include "Lib/Admin/Fps.h"
+#include "Lib/Controll/Keyboard/Key.h"
+#include "Lib/controll/mouse/mouse.h"
+
 
 // ゲームプログラムは WinMain から始まります
 int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
@@ -57,6 +59,7 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 		//入力情報取得＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 		CMouse::Update();
+		CKey::Step();
 		//＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 		//シーン管理＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
