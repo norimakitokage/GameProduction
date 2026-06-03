@@ -73,6 +73,9 @@
     <Filter Include="ソース ファイル\Game\Scene\SceneClear">
       <UniqueIdentifier>{870f4c53-b311-4ce0-aa84-12def2e8a875}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game\System\Effect">
+      <UniqueIdentifier>{295efe1a-9781-45b5-8981-bc3539a27b2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Common.h">
@@ -95,9 +98,6 @@
     </ClInclude>
     <ClInclude Include="Src\Lib\Controll\Pad\Pad.h">
       <Filter>ソース ファイル\Lib\Controll\Pad</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\Lib\Effekseer\Effekseer.h">
-      <Filter>ソース ファイル\Lib\Effekseer</Filter>
     </ClInclude>
     <ClInclude Include="Src\Lib\Fade\Fade.h">
       <Filter>ソース ファイル\Lib\Fade</Filter>
@@ -166,9 +166,6 @@
     </ClCompile>
     <ClCompile Include="Src\Lib\Controll\Pad\Pad.cpp">
       <Filter>ソース ファイル\Lib\Controll\Pad</Filter>
-    </ClCompile>
-    <ClCompile Include="Src\Lib\Effekseer\Effekseer.cpp">
-      <Filter>ソース ファイル\Lib\Effekseer</Filter>
     </ClCompile>
     <ClCompile Include="Src\Lib\Fade\Fade.cpp">
       <Filter>ソース ファイル\Lib\Fade</Filter>

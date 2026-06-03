@@ -84,6 +84,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Src\Effekseer\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies);$(ProjectDir)Src\Effekseer\install_msvc2022_x64\Effekseer_vs2022_x64_d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,6 +105,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Src\Effekseer\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(ProjectDir)Src\Effekseer\install_msvc2022_x64\Effekseer_vs2022_x64_d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -114,13 +116,13 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Src\Effekseer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Src\Effekseer\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies);$(ProjectDir)Src\Effekseer\install_msvc2022_x64\Effekseer_vs2022_x64_d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,6 +143,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Src\Effekseer\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(ProjectDir)Src\Effekseer\install_msvc2022_x64\Effekseer_vs2022_x64_d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -157,7 +160,6 @@
     <ClInclude Include="Src\Lib\Controll\Keyboard\Key.h" />
     <ClInclude Include="Src\Lib\Controll\Mouse\Mouse.h" />
     <ClInclude Include="Src\Lib\Controll\Pad\Pad.h" />
-    <ClInclude Include="Src\Lib\Effekseer\Effekseer.h" />
     <ClInclude Include="Src\Lib\Fade\Fade.h" />
     <ClInclude Include="Src\Lib\Math\ActorMove.h" />
     <ClInclude Include="Src\Lib\Math\Getrand.h" />
@@ -181,7 +183,6 @@
     <ClCompile Include="Src\Lib\Controll\Keyboard\Key.cpp" />
     <ClCompile Include="Src\Lib\Controll\Mouse\Mouse.cpp" />
     <ClCompile Include="Src\Lib\Controll\Pad\Pad.cpp" />
-    <ClCompile Include="Src\Lib\Effekseer\Effekseer.cpp" />
     <ClCompile Include="Src\Lib\Fade\Fade.cpp" />
     <ClCompile Include="Src\Lib\Math\ActorMove.cpp" />
     <ClCompile Include="Src\Lib\Math\Getrand.cpp" />

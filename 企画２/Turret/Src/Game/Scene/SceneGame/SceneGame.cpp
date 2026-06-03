@@ -42,6 +42,7 @@ void CSceneGame::Step()
 {
 	if (CKey::Rep(KEY_INPUT_RETURN)) {
 		m_State = ENDWAIT;
+		return;
 	}
 
 	m_State = UPDATE;

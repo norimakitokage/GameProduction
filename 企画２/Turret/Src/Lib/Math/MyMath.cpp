@@ -5,7 +5,7 @@
 
 //‹——£‚ÌŒvZ
 //x1‚©‚çx2‚Ü‚Å‚Ì‹——£‚ğŒvZ
-int CMath::GetDistance(float x1, float y1, float x2, float y2)
+float CMath::GetDistance(float x1, float y1, float x2, float y2)
 {
 	float x = x2 - x1;
 	float y = y2 - y1;

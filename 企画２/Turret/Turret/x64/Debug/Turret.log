@@ -1,31 +1,6 @@
-﻿cl : コマンド ライン  warning D9002: 不明なオプション '/ignore:4099' を無視します。
-  Scene.cpp
-  SceneBase.cpp
-  SceneClear.cpp
-  SceneDefeat.cpp
-  SceneGame.cpp
+﻿  SceneGame.cpp
   SceneTitle.cpp
-C:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneGame\SceneGame.cpp(36,13): warning C4551: 関数呼び出しに引数リストがありません。
-C:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneTitle\SceneTitle.cpp(37,13): warning C4551: 関数呼び出しに引数リストがありません。
-  Data.cpp
-  Fps.cpp
-  Collision.cpp
-  Key.cpp
-  Mouse.cpp
-  Pad.cpp
-  Effekseer.cpp
-  Fade.cpp
-  ActorMove.cpp
-  Getrand.cpp
-  MyMath.cpp
-C:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Lib\Math\MyMath.cpp(13,14): warning C4244: 'return': 'float' から 'int' への変換です。データが失われる可能性があります。
-  Actor.cpp
-  Object.cpp
-  Observer.cpp
+D:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneGame\SceneGame.cpp(36,13): warning C4551: 関数呼び出しに引数リストがありません。
+D:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneTitle\SceneTitle.cpp(37,13): warning C4551: 関数呼び出しに引数リストがありません。
   コードを生成中...
-  コンパイル中...
-  Subject.cpp
-  Singleton.cpp
-  Main.cpp
-  コードを生成中...
-LINK : fatal error LNK1104: ファイル 'install_msvc2022_x64/Effekseer_vs2022_x64_d.lib' を開くことができません。
+  Turret.vcxproj -> D:\Users\2409409\Desktop\GameProduction\企画２\Turret\x64\Debug\Turret.exe

@@ -8,7 +8,7 @@ public:
 	// ベクトルの計算
 	// =========================================
 	//距離の計算
-	static int GetDistance(float x1, float y1, float x2, float y2);
+	static float GetDistance(float x1, float y1, float x2, float y2);
 
 	//ベクトルの加算
 	static VECTOR VecAdd(VECTOR vec1, VECTOR vec2);
