@@ -1,8 +1,16 @@
 #include <DxLib.h>
 #include "Fps.h"
 
-#define FRAME_RATE	(60)
-#define FRAME_RATE_MILI_SECOND	(1000 / FRAME_RATE -1)
+float CFps::m_frameRate;
+int CFps::m_nowTime;
+int CFps::m_prevTime;
+int CFps::m_prevDrawTime;
+int CFps::m_count;
+
+// 最高フレームレート
+constexpr int FRAME_RATE = 60;
+// 1フレームのミリ秒
+constexpr int FRAME_RATE_MILI_SECOND = 1000 / FRAME_RATE - 1;
 
 void CFps::InitFps() {
 	//基本的に0で初期化

@@ -25,18 +25,17 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	// 一番最初に１回だけやる処理
 	SetDrawScreen(DX_SCREEN_BACK);	// 画面のちらつきを無くす
 	SetTransColor(255, 0, 255);		// 透過色指定　今回は真紫色を透明
-	//SetUseASyncLoadFlag(false);
-	////当たり判定の球をきれいに表示
-	//SetUseZBuffer3D(TRUE);
-	//SetWriteZBuffer3D(TRUE);
-	////ライティング計算の設定
-	//SetUseLighting(true);
-	////マウスを不可視化
-	//SetMouseDispFlag(false);
+	SetUseASyncLoadFlag(false);
+	//当たり判定の球をきれいに表示
+	SetUseZBuffer3D(TRUE);
+	SetWriteZBuffer3D(TRUE);
+	//ライティング計算の設定
+	SetUseLighting(true);
+	//マウスを不可視化
+	SetMouseDispFlag(false);
 
 	// FPS管理クラス
-	CFps g_Fps;
-	g_Fps.InitFps();
+	CFps::InitFps();
 
 	//シーン管理クラス
 	CScene::Init();
@@ -48,12 +47,12 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		// 「escキー」が押されたら終了
 		if (CheckHitKey(KEY_INPUT_ESCAPE) == 1) break;
 
-		if (!g_Fps.IsNextFrame()) continue;
+		if (!CFps::IsNextFrame()) continue;
 
 		// 画面を一度何もない状態へ
 		ClearDrawScreen();
 
-		g_Fps.StepFps();
+		CFps::StepFps();
 
 		// ゲーム本体の命令はこれより下に書く
 

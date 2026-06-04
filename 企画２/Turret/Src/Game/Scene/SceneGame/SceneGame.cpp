@@ -5,6 +5,8 @@
 #include "../../../Lib/Fade/Fade.h"
 #include "../Scene.h"
 
+
+
 void CSceneGame::Draw()
 {
 	switch (m_State)
@@ -23,6 +25,10 @@ void CSceneGame::Draw()
 void CSceneGame::Init()
 {
 	m_State = LOAD;
+	
+	m_Camera.Init();
+	m_Player.Init();
+
 }
 
 void CSceneGame::Load()

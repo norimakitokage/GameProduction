@@ -148,6 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Game\Camera\CameraDebug\CameraDebug.h" />
+    <ClInclude Include="Src\Game\Camera\CameraManager.h" />
+    <ClInclude Include="Src\Game\Camera\CameraPlayer\CameraPlayer.h" />
+    <ClInclude Include="Src\Game\Player\Player.h" />
     <ClInclude Include="Src\Game\Scene\Scene.h" />
     <ClInclude Include="Src\Game\Scene\SceneBase.h" />
     <ClInclude Include="Src\Game\Scene\SceneClear\SceneClear.h" />
@@ -171,6 +175,10 @@
     <ClInclude Include="Src\Lib\Singleton\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Game\Camera\CameraDebug\CameraDebug.cpp" />
+    <ClCompile Include="Src\Game\Camera\CameraManager.cpp" />
+    <ClCompile Include="Src\Game\Camera\CameraPlayer\CameraPlayer.cpp" />
+    <ClCompile Include="Src\Game\Player\Player.cpp" />
     <ClCompile Include="Src\Game\Scene\Scene.cpp" />
     <ClCompile Include="Src\Game\Scene\SceneBase.cpp" />
     <ClCompile Include="Src\Game\Scene\SceneClear\SceneClear.cpp" />

@@ -15,14 +15,16 @@ void CScene::Init()
 
 void CScene::Step()
 {
-	CFade::Step();
 	m_Scene->Loop();
+
+	CFade::Step();
 }
 
 void CScene::Draw()
 {
-	CFade::Draw();
 	m_Scene->Draw();
+
+	CFade::Draw();
 }
 
 void CScene::SetSceneType(tagSceneType type)

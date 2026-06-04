@@ -10,9 +10,6 @@ const int WINDOW_SIZE_Y = 900;
 const int WINDOW_SENTER_X = static_cast<int>(WINDOW_SIZE_X * 0.5);
 const int WINDOW_SENTER_Y = static_cast<int>(WINDOW_SIZE_Y * 0.5);
 
-// ブロックを配置するサイズ
-
-
 //色
 const int WHITE = GetColor(255, 255, 255);	//白
 const int BLACK = GetColor(0, 0, 0);			//黒

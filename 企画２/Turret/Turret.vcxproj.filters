@@ -76,6 +76,18 @@
     <Filter Include="ソース ファイル\Game\System\Effect">
       <UniqueIdentifier>{295efe1a-9781-45b5-8981-bc3539a27b2a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game\Camera">
+      <UniqueIdentifier>{bcc8114a-07d8-4d19-a6fd-96775eabc99a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Camera\CameraPlayer">
+      <UniqueIdentifier>{135d6fc9-c8cf-49b1-af95-6962859588df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Camera\CameraDebug">
+      <UniqueIdentifier>{c7d706ef-f89a-48e0-bebf-2c8cb358b423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Player">
+      <UniqueIdentifier>{3ad78bba-330f-4bed-833f-d8d282c95f61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Common.h">
@@ -144,6 +156,18 @@
     <ClInclude Include="Src\Game\Scene\SceneClear\SceneClear.h">
       <Filter>ソース ファイル\Game\Scene\SceneClear</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraPlayer\CameraPlayer.h">
+      <Filter>ソース ファイル\Game\Camera\CameraPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraManager.h">
+      <Filter>ソース ファイル\Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Camera\CameraDebug\CameraDebug.h">
+      <Filter>ソース ファイル\Game\Camera\CameraDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Player\Player.h">
+      <Filter>ソース ファイル\Game\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp">
@@ -211,6 +235,18 @@
     </ClCompile>
     <ClCompile Include="Src\Game\Scene\SceneClear\SceneClear.cpp">
       <Filter>ソース ファイル\Game\Scene\SceneClear</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraPlayer\CameraPlayer.cpp">
+      <Filter>ソース ファイル\Game\Camera\CameraPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraManager.cpp">
+      <Filter>ソース ファイル\Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Camera\CameraDebug\CameraDebug.cpp">
+      <Filter>ソース ファイル\Game\Camera\CameraDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Player\Player.cpp">
+      <Filter>ソース ファイル\Game\Player</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
