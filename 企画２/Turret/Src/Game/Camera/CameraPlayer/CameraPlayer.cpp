@@ -84,56 +84,56 @@ void CPlayerCamera::Step(VECTOR vForcus){
 	camPos.y = tanf(m_CamRot.x) * -CAMERA_HIGH;
 	camPos.z = cosf(m_CamRot.y) * CAMERA_LENGTH;
 
-	//方向ベクトルの取得
-	VECTOR dir = VSub(m_CamPos, vForcus);
-	//方向ベクトルの長さを求める
-	float len = VSize(dir);
-	//一定以上距離が離れたら
-	if (len >= MAX_LEN_NEAR) {
-		//座標を計算
-		camPos.x = sinf(m_CamRot.y) * MAX_LEN_NEAR;
-		camPos.y = tanf(m_CamRot.x) * -CAMERA_HIGH;
-		camPos.z = cosf(m_CamRot.y) * MAX_LEN_NEAR;
-		//移動ベクトルを座標に
-		camPos = VAdd(camPos, m_CamRot);
+	////方向ベクトルの取得
+	//VECTOR dir = VSub(m_CamPos, vForcus);
+	////方向ベクトルの長さを求める
+	//float len = VSize(dir);
+	////一定以上距離が離れたら
+	//if (len >= MAX_LEN_NEAR) {
+	//	//座標を計算
+	//	camPos.x = sinf(m_CamRot.y) * MAX_LEN_NEAR;
+	//	camPos.y = tanf(m_CamRot.x) * -CAMERA_HIGH;
+	//	camPos.z = cosf(m_CamRot.y) * MAX_LEN_NEAR;
+	//	//移動ベクトルを座標に
+	//	camPos = VAdd(camPos, m_CamRot);
 
-		//方向ベクトルの取得
-		VECTOR tempDir = VSub(m_CamPos, camPos);
-		tempDir = VNorm(tempDir);
-		//動かしたいスピード分掛け算する
-		tempDir = VScale(tempDir, CAM_MOVE_SPEED);
-		m_CamPos = VAdd(m_CamPos, tempDir);
+	//	//方向ベクトルの取得
+	//	VECTOR tempDir = VSub(m_CamPos, camPos);
+	//	tempDir = VNorm(tempDir);
+	//	//動かしたいスピード分掛け算する
+	//	tempDir = VScale(tempDir, CAM_MOVE_SPEED);
+	//	m_CamPos = VAdd(m_CamPos, tempDir);
 
-		if (VSquareSize(tempDir) > MAX_LEN_FAR * MAX_LEN_FAR) {
-			tempDir = VNorm(tempDir);
-			tempDir = VScale(tempDir, MAX_LEN_FAR);
-			m_CamPos = VAdd(vForcus, tempDir);
-		}
-	}
-	else if (len < MIN_LEN_NEAR) {
-		//座標を計算
-		camPos.x = sinf(m_CamRot.y) * MIN_LEN_NEAR;
-		camPos.y = tanf(m_CamRot.x) * -CAMERA_HIGH;
-		camPos.z = cosf(m_CamRot.y) * MIN_LEN_NEAR;
-		//移動ベクトルを座標に
-		camPos = VAdd(camPos, m_CamPos);
+	//	if (VSquareSize(tempDir) > MAX_LEN_FAR * MAX_LEN_FAR) {
+	//		tempDir = VNorm(tempDir);
+	//		tempDir = VScale(tempDir, MAX_LEN_FAR);
+	//		m_CamPos = VAdd(vForcus, tempDir);
+	//	}
+	//}
+	//else if (len < MIN_LEN_NEAR) {
+	//	//座標を計算
+	//	camPos.x = sinf(m_CamRot.y) * MIN_LEN_NEAR;
+	//	camPos.y = tanf(m_CamRot.x) * -CAMERA_HIGH;
+	//	camPos.z = cosf(m_CamRot.y) * MIN_LEN_NEAR;
+	//	//移動ベクトルを座標に
+	//	camPos = VAdd(camPos, m_CamPos);
 
-		//方向ベクトルの取得
-		VECTOR tempDir = VSub(m_CamPos, camPos);
-		tempDir = VNorm(tempDir);
-		//動かしたいスピード分掛け算する
-		tempDir = VScale(tempDir, CAM_MOVE_SPEED);
-		m_CamPos = VAdd(m_CamPos, tempDir);
+	//	//方向ベクトルの取得
+	//	VECTOR tempDir = VSub(m_CamPos, camPos);
+	//	tempDir = VNorm(tempDir);
+	//	//動かしたいスピード分掛け算する
+	//	tempDir = VScale(tempDir, CAM_MOVE_SPEED);
+	//	m_CamPos = VAdd(m_CamPos, tempDir);
 
-		if (VSquareSize(tempDir) > MIN_LEN_FAR * MIN_LEN_FAR) {
-			tempDir = VNorm(tempDir);
-			tempDir = VScale(tempDir, MIN_LEN_FAR);
-			m_CamPos = VAdd(vForcus, tempDir);
-		}
-	}
+	//	if (VSquareSize(tempDir) > MIN_LEN_FAR * MIN_LEN_FAR) {
+	//		tempDir = VNorm(tempDir);
+	//		tempDir = VScale(tempDir, MIN_LEN_FAR);
+	//		m_CamPos = VAdd(vForcus, tempDir);
+	//	}
+	//}
 
 	//カメラの位置はプレイヤー＋計算結果
-	//m_CamPos = VAdd(vForcus, camPos);
+	m_CamPos = VAdd(vForcus, camPos);
 
 	if (m_CamPos.y <= CAMERA_POSY_MIN) m_CamPos.y = CAMERA_POSY_MIN;
  

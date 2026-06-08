@@ -13,7 +13,7 @@
 
 //ーーーーーーーーーーーーーーーーーーーーーー
 
-const float CAMERA_FAR = 100.0f;
+const float CAMERA_FAR = 10000.0f;
 const VECTOR START_CAM_POS = { 0.0f,0.0f,0.0f };
 const VECTOR START_FORCUS = { 0.0f,0.0f,0.0f };
 const VECTOR START_UPVEC = { 0.0f,1.0f,0.0f };

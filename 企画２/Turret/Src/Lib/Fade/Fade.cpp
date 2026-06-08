@@ -101,9 +101,9 @@ void CFade::RequestFadeOut()
 
 
 //フェードインが終了したか
-bool CFade::IsEndFadeIn(const tagFadeState& Id)
+bool CFade::IsEndFadeIn()
 {
-	if (Id == FADE_IN)
+	if (m_id == FADE_IN)
 	{
 		return false;
 	}
@@ -113,9 +113,9 @@ bool CFade::IsEndFadeIn(const tagFadeState& Id)
 
 
 //フェードアウトが終了したか
-bool CFade::IsEndFadeOut(const tagFadeState& Id)
+bool CFade::IsEndFadeOut()
 {
-	if (Id == FADE_OUT)
+	if (m_id == FADE_OUT)
 	{
 		return false;
 	}

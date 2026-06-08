@@ -17,6 +17,10 @@ void CSceneGame::Draw()
 	case CSceneBase::ENDWAIT:
 		DrawFormatString(WINDOW_SENTER_X, WINDOW_SENTER_Y, WHITE, "ÉQÅ[ÉÄ");
 
+		m_Land.Draw();
+
+		m_Player.Draw();
+
 		break;
 	}
 }
@@ -28,25 +32,37 @@ void CSceneGame::Init()
 	
 	m_Camera.Init();
 	m_Player.Init();
+	m_Land.Init();
+	m_Wall.Init();
 
 }
 
 void CSceneGame::Load()
 {
-	CFade::RequestFadeOut();
+	m_Player.Load();
+	m_Land.Load();
+	m_Wall.LoadModel("Data/Landform/Land/Wall.mv1");
+	m_Wall.SetScale(VGet(0.001f, 0.001f, 0.001f));
+	m_Wall.Update();
+
+	CFade::RequestFadeIn();
 	m_State = STARTWAIT;
 }
 
 void CSceneGame::StartWait()
 {
-	if (CFade::IsEndFadeOut) {
+	if (CFade::IsEndFadeIn()) {
 		m_State = STEP;
 	}
 }
 
 void CSceneGame::Step()
 {
+	m_Camera.Step(m_Player.GetPosition());
+	m_Player.Step();
+
 	if (CKey::Rep(KEY_INPUT_RETURN)) {
+		CFade::RequestFadeOut();
 		m_State = ENDWAIT;
 		return;
 	}
@@ -56,16 +72,25 @@ void CSceneGame::Step()
 
 void CSceneGame::Update()
 {
+	m_Camera.Update();
+	m_Player.Update();
+
 	m_State = STEP;
 }
 
 void CSceneGame::EndWait()
 {
-	m_State = EXIT;
+	if (CFade::IsEndFadeOut()) {
+		m_State = EXIT;
+	}
 }
 
 void CSceneGame::Exit()
 {
+	m_Player.Exit();
+	m_Land.Exit();
+
+
 	CScene::SetSceneType(tagSceneType::TITLE);
 
 	m_State = INIT;

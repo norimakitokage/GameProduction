@@ -88,6 +88,15 @@
     <Filter Include="ソース ファイル\Game\Player">
       <UniqueIdentifier>{3ad78bba-330f-4bed-833f-d8d282c95f61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Game\Landform">
+      <UniqueIdentifier>{516acb69-654e-49d5-9045-fabacb4110d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Landform\Sky">
+      <UniqueIdentifier>{d4f7c4af-c09b-43fc-9ec9-73bf303b6669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Landform\Land">
+      <UniqueIdentifier>{9f1d1285-3a95-48ef-8133-3fe97b4632af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Common.h">
@@ -168,6 +177,15 @@
     <ClInclude Include="Src\Game\Player\Player.h">
       <Filter>ソース ファイル\Game\Player</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Game\Landform\Sky\Sky.h">
+      <Filter>ソース ファイル\Game\Landform\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Landform\LandformManager.h">
+      <Filter>ソース ファイル\Game\Landform</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Game\Landform\Land\Wall.h">
+      <Filter>ソース ファイル\Game\Landform\Land</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Main.cpp">
@@ -247,6 +265,15 @@
     </ClCompile>
     <ClCompile Include="Src\Game\Player\Player.cpp">
       <Filter>ソース ファイル\Game\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Landform\Sky\Sky.cpp">
+      <Filter>ソース ファイル\Game\Landform\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Landform\LandformManager.cpp">
+      <Filter>ソース ファイル\Game\Landform</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game\Landform\Land\Wall.cpp">
+      <Filter>ソース ファイル\Game\Landform\Land</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

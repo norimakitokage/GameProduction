@@ -26,6 +26,7 @@ int  WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	SetDrawScreen(DX_SCREEN_BACK);	// 画面のちらつきを無くす
 	SetTransColor(255, 0, 255);		// 透過色指定　今回は真紫色を透明
 	SetUseASyncLoadFlag(false);
+	
 	//当たり判定の球をきれいに表示
 	SetUseZBuffer3D(TRUE);
 	SetWriteZBuffer3D(TRUE);

@@ -1,6 +1,2 @@
-﻿  SceneGame.cpp
-  SceneTitle.cpp
-D:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneGame\SceneGame.cpp(36,13): warning C4551: 関数呼び出しに引数リストがありません。
-D:\Users\2409409\Desktop\GameProduction\企画２\Turret\Src\Game\Scene\SceneTitle\SceneTitle.cpp(37,13): warning C4551: 関数呼び出しに引数リストがありません。
-  コードを生成中...
-  Turret.vcxproj -> D:\Users\2409409\Desktop\GameProduction\企画２\Turret\x64\Debug\Turret.exe
+﻿  Player.cpp
+  Turret.vcxproj -> C:\Users\2409409\Desktop\GameProduction\企画２\Turret\x64\Debug\Turret.exe

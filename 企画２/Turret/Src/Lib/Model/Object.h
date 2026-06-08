@@ -4,10 +4,10 @@
 //3Dモデル操作クラス
 class CObject {
 protected:
-	VECTOR m_pos;		//座標
-	VECTOR m_rot;		//回転
-	VECTOR m_scale;		//拡縮
-	int m_hndl;			//モデルのハンドル
+	VECTOR m_Pos;		//座標
+	VECTOR m_Rot;		//回転
+	VECTOR m_Scale;		//拡縮
+	int m_Hndl;			//モデルのハンドル
 	
 
 public:
@@ -29,5 +29,21 @@ public:
 	void LoadDuplicateModel(int OrgHndl);
 	//モデル削除
 	void DeleteModel();
+
+public:
+	// 座標のゲッター・セッター
+	void SetPosition(VECTOR pos);
+
+	VECTOR GetPosition();
+
+	// 回転のゲッター・セッター
+	void SetRotation(VECTOR rot);
+
+	VECTOR GetRotation();
+
+	// 拡縮のゲッター・セッター
+	void SetScale(VECTOR scale);
+
+	VECTOR GetScale();
 
 };

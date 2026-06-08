@@ -28,13 +28,13 @@ void CSceneTitle::Init()
 void CSceneTitle::Load()
 {
 
-	CFade::RequestFadeOut();
+	CFade::RequestFadeIn();
 	m_State = STARTWAIT;
 }
 
 void CSceneTitle::StartWait()
 {
-	if (CFade::IsEndFadeOut) {
+	if (CFade::IsEndFadeIn()) {
 		m_State = STEP;
 	}
 }
@@ -42,6 +42,7 @@ void CSceneTitle::StartWait()
 void CSceneTitle::Step()
 {
 	if (CKey::Rep(KEY_INPUT_RETURN)) {
+		CFade::RequestFadeOut();
 		m_State = ENDWAIT;
 		return;
 	}
@@ -56,7 +57,9 @@ void CSceneTitle::Update()
 
 void CSceneTitle::EndWait()
 {
-	m_State = EXIT;
+	if (CFade::IsEndFadeOut()) {
+		m_State = EXIT;
+	}
 }
 
 void CSceneTitle::Exit()

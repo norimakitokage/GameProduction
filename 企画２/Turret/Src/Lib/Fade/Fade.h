@@ -25,9 +25,9 @@ public:
 	//フェードアウトリクエスト
 	static void RequestFadeOut();
 	//フェードインが終了したか
-	static bool IsEndFadeIn(const tagFadeState& Id);
+	static bool IsEndFadeIn();
 	//フェードアウトが終了したか
-	static bool IsEndFadeOut(const tagFadeState& Id);
+	static bool IsEndFadeOut();
 
 	//現在の状態を取得
 	static tagFadeState GetFadeId() { return m_id; }

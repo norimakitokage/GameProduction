@@ -56,16 +56,16 @@ void CActor::Update() {
 	}
 
 	//アニメーションの時間を更新
-	MV1SetAttachAnimTime(m_hndl, m_animData.m_hndl, m_animData.m_frame);
+	MV1SetAttachAnimTime(m_Hndl, m_animData.m_hndl, m_animData.m_frame);
 }
 
 //アニメリクエスト
 void CActor::Request(int animId, float animSpd, int animSrcHndl, bool NameCheck) {
 	DetachAnim();
 
-	m_animData.m_hndl = MV1AttachAnim(m_hndl, animId, animSrcHndl, NameCheck);
+	m_animData.m_hndl = MV1AttachAnim(m_Hndl, animId, animSrcHndl, NameCheck);
 	m_animData.m_id = animId;
-	m_animData.m_endFrame = MV1GetAnimTotalTime(m_hndl, animId);
+	m_animData.m_endFrame = MV1GetAnimTotalTime(m_Hndl, animId);
 	m_animData.m_frame = 0.0f;
 	m_animData.m_speed = animSpd;
 	m_animData.m_state = ANIM_DEFAULT;
@@ -112,7 +112,7 @@ int CActor::GetAnimID() {
 //アニメーションデタッチ
 void CActor::DetachAnim() {
 	if (m_animData.m_hndl != -1) {
-		MV1DetachAnim(m_hndl, m_animData.m_hndl);
+		MV1DetachAnim(m_Hndl, m_animData.m_hndl);
 		m_animData.m_hndl = -1;
 	}
 }
